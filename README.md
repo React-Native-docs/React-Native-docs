@@ -5,11 +5,13 @@ React-Native-docs 요약 &amp; 번역 &amp; 예제구현
 
     minsekim mina seomoon jiwonlee
 
-#### [블로그문서](https://mins97.github.io/rndoc2/)
+<!-- #### [블로그문서](https://mins97.github.io/rndoc2/) -->
 
-#### [블로그문서파일](https://github.com/Mins97/rndoc2/blob/gh-pages/index.md)
+<!-- #### [블로그문서파일](https://github.com/Mins97/rndoc2/blob/gh-pages/index.md) -->
 
 #### [프로젝트소스코드](https://github.com/Mins97/rndoc2)
+
+#### [번역 원문](https://velog.io/@leejiwonn/RN-React-Native-Docs-1-The-Basics)
 
 # 목적
 
