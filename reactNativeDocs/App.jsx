@@ -1,7 +1,7 @@
 import React from 'react';
-import Nav from "./page/Nav";
+import DrawerNav from "./page/DrawerNav";
 export default function App() { //가장 메인
   return ( 
-      <Nav/>
+    <DrawerNav/>
   );
 }
