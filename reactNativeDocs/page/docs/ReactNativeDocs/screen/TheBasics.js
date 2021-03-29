@@ -123,62 +123,60 @@ Web : Web 개발자는 이 개념에 친숙할 수도 있습니다.
 가이드가 어떻게 구성되었는지 알아봤으니, 이제 React Native: [네이티브 컴포넌트](https://reactnative.dev/docs/intro-react-native-components)의 기초에 대해 알아보겠습니다.
 `
 
-export default class TheBasics extends Component<> {
-	render() {
-		return (
-			<ScrollView
-				contentInsetAdjustmentBehavior="automatic"
-				style={styles.scrollView}>
-				<View style={styles.container}>
+const TheBasics = () => {
+	return (
+		<ScrollView
+			contentInsetAdjustmentBehavior="automatic"
+			style={styles.scrollView}>
+			<View style={styles.container}>
+				<Markdown
+					styles={markdownStyle.collectiveMd}
+					onLink={(url) => Linking.openURL(url)}
+				>
+					{ text1 }
+				</Markdown>
+				<TouchableOpacity>
 					<Markdown
-						styles={markdownStyle.collectiveMd}
-						onLink={(url) => Linking.openURL(url)}
+						styles={markdownStyle.codeBlock}
 					>
-						{ text1 }
+						{ code1 }
 					</Markdown>
-					<TouchableOpacity>
-						<Markdown
-							styles={markdownStyle.codeBlock}
-						>
-							{ code1 }
-						</Markdown>
-					</TouchableOpacity>
+				</TouchableOpacity>
+				<Markdown
+					styles={markdownStyle.collectiveMd}
+					onLink={(url) => Linking.openURL(url)}
+				>
+					{ text2 }
+				</Markdown>
+				<TouchableOpacity>
 					<Markdown
-						styles={markdownStyle.collectiveMd}
-						onLink={(url) => Linking.openURL(url)}
+						styles={markdownStyle.codeBlock}
 					>
-						{ text2 }
+						{ code2 }
 					</Markdown>
-					<TouchableOpacity>
-						<Markdown
-							styles={markdownStyle.codeBlock}
-						>
-							{ code2 }
-						</Markdown>
-					</TouchableOpacity>
+				</TouchableOpacity>
+				<Markdown
+					styles={markdownStyle.collectiveMd}
+					onLink={(url) => Linking.openURL(url)}
+				>
+					{ text3 }
+				</Markdown>
+				<TouchableOpacity>
 					<Markdown
-						styles={markdownStyle.collectiveMd}
-						onLink={(url) => Linking.openURL(url)}
+						styles={markdownStyle.codeBlock}
 					>
-						{ text3 }
+						{ code3 }
 					</Markdown>
-					<TouchableOpacity>
-						<Markdown
-							styles={markdownStyle.codeBlock}
-						>
-							{ code3 }
-						</Markdown>
-					</TouchableOpacity>
-					<Markdown
-						styles={markdownStyle.collectiveMd}
-						onLink={(url) => Linking.openURL(url)}
-					>
-						{ text4 }
-					</Markdown>
-				</View>
-			</ScrollView>
-		);
-	}
+				</TouchableOpacity>
+				<Markdown
+					styles={markdownStyle.collectiveMd}
+					onLink={(url) => Linking.openURL(url)}
+				>
+					{ text4 }
+				</Markdown>
+			</View>
+		</ScrollView>
+	)
 }
 
 const styles = StyleSheet.create({
@@ -195,3 +193,5 @@ const styles = StyleSheet.create({
 		marginBottom: 5,
 	}
 });
+
+export default TheBasics;
