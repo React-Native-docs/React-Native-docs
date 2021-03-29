@@ -19,28 +19,7 @@ import Home from './docs/Home'
 	
 // import Icon from 'react-native-vector-icons/dist/Feather';
 import { Ionicons } from '@expo/vector-icons';
-function HomeScreen({ navigation }) {
-	return (
-		<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-			<Button
-				onPress={() => navigation.navigate('Notifications')}
-				title="Go to notifications"
-			/>
-		</View>
-	);
-}
-
-function NotificationsScreen({ navigation }) {
-	return (
-		<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-			<Button onPress={() => navigation.goBack()} title="Go back home" />
-		</View>
-	);
-}
-
 const Drawer = createDrawerNavigator();
-
-
 const ReactNativeDocsList = [
 	TheBasics,
 	EnvironmentSetup,
