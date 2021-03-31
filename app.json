@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "rn-project",
+    "slug": "rn-project",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.hyuna.rnproject"
+    }
+  }
+}
