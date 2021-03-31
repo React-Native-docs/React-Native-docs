@@ -1,7 +1,7 @@
 import React from 'react';
 import { Linking } from 'react-native';
 import Header from '~/components/Header/Header';
-import { Container, MainButton, LearnButton, OriginalButton, MainBanner, ContentView, GithubView, GithubButton, BlockView } from './Home.styles';
+import { Container, MainButton, LearnButton, OriginalButton, MainBanner, ContentView, GithubView, GithubButton, BlockView, LogoText } from './Home.styles';
 import ReactMiniLogoIcon from '~/assets/icons/react-mini-logo.svg';
 import MenuIcon from '~/assets/icons/menu-icon.svg';
 import SearchIcon from '~/assets/icons/search-icon.svg';
@@ -10,10 +10,17 @@ const Home = ({ navigation }) => {
 	const ContentBlock = (props) => {
 		return(
 			<BlockView>
-				<BlockView.Title>{props.title}</BlockView.Title>
-				<BlockView.Text>
-					{props.subtitle}
-				</BlockView.Text>
+        <BlockView.Left>
+          <BlockView.Title>{props.title}</BlockView.Title>
+          <BlockView.Text>
+            {props.subtitle}
+          </BlockView.Text>
+        </BlockView.Left>
+        <BlockView.Right>
+          <BlockView.RightText>
+            {'>'}
+          </BlockView.RightText>
+        </BlockView.Right>
 			</BlockView>
 		);
 	};
@@ -26,8 +33,13 @@ const Home = ({ navigation }) => {
             <MenuIcon />
           </Header.Button>
         }
+        center={
+          <Header.Button onPress={() => navigation.navigate('Home')}>
+            <LogoText>RNDOC</LogoText>
+          </Header.Button>
+        }
         right={
-          <Header.Button>
+          <Header.Button onPress={() => alert('This is a search button!')}>
             <SearchIcon />
           </Header.Button>
         }
@@ -41,14 +53,15 @@ const Home = ({ navigation }) => {
           <MainBanner.Title>Hello React Native !</MainBanner.Title>
           <MainBanner.SubTitle>
             React Native 공식 문서를 한글 버전으로 번역했습니다.{'\n'}
-            앱을 통해 한글 번역 내용과 예제를 직접 실행해보며 배울 수 있습니다. 즐코 !
+            앱을 통해 한글 번역 내용과 예제를 직접 실행해보며{'\n'}
+            배울 수 있습니다. 즐코 !
           </MainBanner.SubTitle>
           {/* 버튼 세로 정렬 */}
           <MainButton>
             <LearnButton>
               <LearnButton.Text>Learn Basics {'>'}</LearnButton.Text>
             </LearnButton>
-            <OriginalButton>
+            <OriginalButton onPress={() => Linking.openURL('https://reactnative.dev/docs/getting-started')}>
               <OriginalButton.Text>View Original {'>'}</OriginalButton.Text>
             </OriginalButton>
           </MainButton>

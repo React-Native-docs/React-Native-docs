@@ -1,5 +1,8 @@
 import React from 'react';
-import { View, TouchableOpacity } from 'react-native';
+import { Text } from 'react-native';
+import { Container, MenuView } from './DrawerMenu.styles';
+import Header from '~/components/Header/Header';
+import ReactLogo from '~/assets/icons/react-logo.svg';
 
 import Connectivity from '~/docs/Basic/Connectivity';
 import Design from '~/docs/Basic/Design';
@@ -36,10 +39,8 @@ import PageTouchableOpacity from "~/docs/CoreComponents/TouchableOpacity";
 import PageTouchableWithoutFeedback from "~/docs/CoreComponents/TouchableWithoutFeedback";
 import PageView from "~/docs/CoreComponents/View";
 import PageVirtualizedList from "~/docs/CoreComponents/VirtualizedList";
-// import Icon from 'react-native-vector-icons/dist/Feather';
-import { Ionicons } from "@expo/vector-icons";
 
-const DrawerMenu = () => {
+const DrawerMenu = ({ navigation }) => {
   const ReactNativeDocsList = [
     TheBasics,
     EnvironmentSetup,
@@ -81,50 +82,24 @@ const DrawerMenu = () => {
 
   return (
     <>
-      <TouchableOpacity onPress={titleOnPress}>
-        <Ionicons
-          name="md-search"
-          size={32}
-          color="white"
-          style={IconStyle}
-        />
-      </TouchableOpacity>
-      {/* {ReactNativeDocsList.map((data) => (
-        <View
-          key={data.name}
-          name={data.name}
-          component={data}
-          options={{ drawerLabel: data.name }}
-        />
-      ))}
-      {ComponentsList.map((data) => (
-        <View
-          key={data.name}
-          name={data.name}
-          component={data}
-          options={{
-            drawerLabel: data.name.slice(4, data.name.length),
-            headerTitle: data.name.slice(4, data.name.length),
-          }}
-        />
-      ))} */}
+      <Header
+        left={
+          <MenuView>
+            <ReactLogo />
+            <MenuView.Text>React Native</MenuView.Text>
+          </MenuView>
+        }
+      />
+      <Container>
+        {ReactNativeDocsList.map((data) => (
+          <Text>{data.name}</Text>
+        ))}
+        {ComponentsList.map((data) => (
+          <Text>{data.name}</Text>
+        ))}
+      </Container>
     </>
   );
 };
-
-const DrawerscreenOptions = {
-  headerShown: true,
-  headerTintColor: "white",
-  headerStyle: { backgroundColor: "#20232B" },
-  headerTitleAlign: "center",
-};
-const drawerContentOptions = {
-  activeTintColor: "#4DD6F6",
-  activeBackgroundColor: "white",
-  itemStyle: { marginVertical: 0 },
-};
-
-const IconStyle = { marginRight: 25 };
-const titleOnPress = () => alert('This is a search button!');
 
 export default DrawerMenu;
