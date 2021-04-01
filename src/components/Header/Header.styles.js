@@ -18,12 +18,5 @@ Container.Box = styled.View`
 `;
 
 export const IconButton = styled.TouchableOpacity`
-  padding: 16px;
+  padding: 20px;
 `;
-
-export const LogoText = styled.Text`
-  font-size: 18px;
-  font-weight: bold;
-  color: #ffffff;
-`;
-

@@ -1,17 +1,17 @@
 import React from 'react';
-import { View, Text } from 'react-native';
-import { Container, IconButton, LogoText } from './Header.styles';
+import { View } from 'react-native';
+import { Container, IconButton } from './Header.styles';
 
 const HeaderButton = (props) => <IconButton {...props}>{props.children}</IconButton>;
 
 const Header = (props) => {
-  const { left, right } = props;
+  const { left, right, center } = props;
 
   return (
     <Container>
       <Container.Box>
         <View>{left}</View>
-        <View><LogoText>RNDOC</LogoText></View>
+        <View>{center}</View>
         <View>{right}</View>
       </Container.Box>
     </Container>
