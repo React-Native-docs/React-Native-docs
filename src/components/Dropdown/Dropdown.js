@@ -1,22 +1,30 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { css } from '@emotion/native';
 import PAGE from '~/constants/page';
-import { DropdownButton, DropdownBox } from './Dropdown.styles';
+import { DropdownContainer, DropdownButton, DropdownBox, PageButton } from './Dropdown.styles';
+import DropdownIcon from '~/assets/icons/dropdown-icon.svg';
 
 const Dropdown = (props) => {
   const { title, pageTitle } = props;
 
   return (
-    <>
+    <DropdownContainer style={
+      title === 'Example' &&
+      css`
+        padding-bottom: 35px;
+      `}>
         <DropdownButton>
-        <Text>{title}</Text>
+          <DropdownButton.Text>{title}</DropdownButton.Text>
+          <DropdownIcon />
         </DropdownButton>
         <DropdownBox>
             {Object.keys(PAGE[pageTitle]).map((name) => (
-                <Text key={name}>{name}</Text>
+                <PageButton>
+                  <PageButton.Text key={name}>{name}</PageButton.Text>
+                </PageButton>
             ))}
         </DropdownBox>
-    </>
+    </DropdownContainer>
   );
 };
  
