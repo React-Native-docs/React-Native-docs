@@ -1,5 +1,4 @@
 import React from 'react';
-import { Text } from 'react-native';
 import { Container, MenuView } from './DrawerMenu.styles';
 import Header from '~/components/Header/Header';
 import Dropdown from '~/components/Dropdown/Dropdown';
