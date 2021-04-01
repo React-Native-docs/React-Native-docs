@@ -6,7 +6,7 @@ import MenuIcon from '~/assets/icons/menu-icon.svg';
 import SearchIcon from '~/assets/icons/search-icon.svg';
 
 const Detail = ({ navigation, route }) => {
-  const { page } = route.params;
+  const { pageTitle, pageName } = route.params;
 
 	return (
 		<>
@@ -29,7 +29,7 @@ const Detail = ({ navigation, route }) => {
       />
       <Container>
           {/* 문서 Scroll View 영역 */}
-          {PAGE[page]}
+          {PAGE[pageTitle][pageName]}
       </Container>
     </>
 	);
