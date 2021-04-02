@@ -13,6 +13,7 @@ import { OuterView, SrcTouchable } from '~/styles/innerpageStyle';
 import { TextMarkdown, CodeMarkdown } from '~/components/Markdown/MarkdownBlock';
 
 import * as content from './TheBasicsContent';
+import * as abc from './PerformanceContent';
 
 
 const TheBasics = () => {
