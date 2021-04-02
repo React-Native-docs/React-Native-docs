@@ -2,7 +2,7 @@
 
 ## Docs
 
-- [] The Basics
+-[] The Basics
   - [] Introduction
   - [] Core Components and Native Components
   - [] React Fundamentals
