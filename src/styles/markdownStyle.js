@@ -45,5 +45,5 @@ const markdownStyle = {
         tableHeader: {
             backgroundColor: 'grey',
         },
-    }
+    },
 };
