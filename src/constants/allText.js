@@ -1,0 +1,42 @@
+import { TheBasicsTextList } from '~/docs/Basic/TheBasics'
+
+export const AllText = {
+	RNDOCS: {
+		TheBasics: TheBasicsTextList,
+		// EnvironmentSetup: <EnvironmentSetup />,
+		// Workflow: <Workflow />,
+		// Design: <Design />,
+		// Interacton: <Interacton />,
+		// Inclustion: <Inclustion />,
+		// Performance: <Performance />,
+		// JavaScriptRuntime: <JavaScriptRuntime />,
+		// Connectivity: <Connectivity />,
+		// NativeModules: <NativeModules />,
+		// NativeComponents: <NativeComponents />,
+		// GuidesAndroid: <GuidesAndroid />,
+		// GuidesiOS: <GuidesiOS />,
+	},
+	COMPONENTS: {
+		// PageActivityIndicator: <PageActivityIndicator />,
+		// PageButton: <PageButton />,
+		// PageCoreComponentsAndAPIs: <PageCoreComponentsAndAPIs />,
+		// PageFlatList: <PageFlatList />,
+		// PageImage: <PageImage />,
+		// PageImageBackground: <PageImageBackground />,
+		// PageKeyboardAvoidingView: <PageKeyboardAvoidingView />,
+		// PageModal: <PageModal />,
+		// PagePressable: <PagePressable />,
+		// PageRefreshControl: <PageRefreshControl />,
+		// PageScrollView: <PageScrollView />,
+		// PageSectionList: <PageSectionList />,
+		// PageStatusBar: <PageStatusBar />,
+		// PageSwitch: <PageSwitch />,
+		// PageText: <PageText />,
+		// PageTextInput: <PageTextInput />,
+		// PageTouchableHighlight: <PageTouchableHighlight />,
+		// PageTouchableOpacity: <PageTouchableOpacity />,
+		// PageTouchableWithoutFeedback: <PageTouchableWithoutFeedback />,
+		// PageView: <PageView />,
+		// PageVirtualizedList: <PageVirtualizedList />,
+	}
+}

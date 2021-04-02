@@ -195,3 +195,4 @@ const styles = StyleSheet.create({
 });
 
 export default TheBasics;
+export const TheBasicsTextList = [text1, text2, text3, text4];
