@@ -118,7 +118,7 @@ React Native는 [React](https://reactjs.org/)와 앱 플랫폼의 네이티브 �
 ## Views and mobile development
 Android 및 iOS 개발에서, **view**는 UI의 기본 구성 요소이며, 텍스트, 이미지를 표시하거나 사용자 입력에 응답하는데 사용할 수 있는 화면 상의 작은 직사각형 요소입니다. 한 줄의 텍스트나 하나의 버튼과 같이 앱에서 가장 작은 시각적 요소 또한 view라고 볼 수 있습니다. 일부 view는 다른 view를 포함할 수 있습니다. 모든 것이 view로 이루어져있습니다!
 
-![](https://images.velog.io/images/leejiwonn/post/b6d38a35-60c2-460b-8fa2-97eb577c08c4/diagram_ios-android-views.svg)
+![](https://user-images.githubusercontent.com/65345381/113455136-db211f00-9444-11eb-9075-92465433d3e0.png)
 
 ## Native Components
 Android 개발에서는 Kotlin 또는 Java로 view를 작성하고, iOS 개발에서는 Swift 또는 Objective-C를 사용합니다. React Native에서는 React 컴포넌트를 사용하는 JavaScript로 view를 호출할 수 있습니다. 런타임에 React Native는 해당 컴포넌트에 상응하는 Android 및 iOS view를 생성합니다. React Native 컴포넌트는 Android 및 iOS 와 동일한 view로 지원되기 때문에, React Native 앱은 다른 모든 앱들처럼 보이고, 느껴지고, 성능을 발휘합니다. 이러한 플랫폼 지원 컴포넌트를 **네이티브 컴포넌트**라고 부릅니다. 
@@ -180,7 +180,7 @@ export default App;
 export const text2_2 = `
 React Native는 React 컴포넌트와 동일한 API 구조를 사용하기 때문에, React Native를 시작하려면 React component API를 이해해야 합니다. [다음 섹션](https://reactnative.dev/docs/intro-react)에서는 이 주제에 대해 간략하게 소개하거나 복습합니다. 하지만 이미 React에 대해 잘 알고 있다면 언제든지 [건너뛸 수 있습니다](https://reactnative.dev/docs/handling-text-input). 
 
-![diagram_react-native-components](https://reactnative.dev/docs/assets/diagram_react-native-components.svg)
+![](https://user-images.githubusercontent.com/65345381/113455203-0146bf00-9445-11eb-95a2-d2d3d5e992ce.png)
 
 `
 
