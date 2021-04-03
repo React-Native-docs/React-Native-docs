@@ -74,6 +74,14 @@ const PAGE = {
         PageTouchableWithoutFeedback: <PageTouchableWithoutFeedback />,
         PageView: <PageView />,
         PageVirtualizedList: <PageVirtualizedList />,
+    },
+    APIS: {
+        PageActivityIndicator: <PageActivityIndicator />,
+        PageButton: <PageButton />,
+    },
+    EXAMPLES: {
+        PageActivityIndicator: <PageActivityIndicator />,
+        PageButton: <PageButton />,
     }
 };
 
