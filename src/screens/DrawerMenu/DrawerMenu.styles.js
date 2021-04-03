@@ -6,6 +6,7 @@ export const Container = styled.ScrollView`
   background-color: #ffffff;
   margin-top: ${Platform.OS === 'ios' ? `66px` : `${StatusBar.currentHeight + 66}px`};
   z-index: 1;
+  padding-top: 10px;
 `;
 
 export const MenuView = styled.View`

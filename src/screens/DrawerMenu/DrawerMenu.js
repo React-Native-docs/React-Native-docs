@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 import { Container, MenuView } from './DrawerMenu.styles';
 import Header from '~/components/Header/Header';
 import Dropdown from '~/components/Dropdown/Dropdown';
 import ReactLogo from '~/assets/icons/react-logo.svg';
-import { Button } from 'react-native';
+
 const DrawerMenu = ({ navigation }) => {
+  const [visibleBox, setVisibleBox] = useState(null);
+  const [textFocus, setTextFocus] = useState(null);
+  
+  const handleToggleShow = useCallback((page) => {
+    setVisibleBox(visibleBox === page? null : page);
+  }, [visibleBox]);
+
+  const handlePageButtonClick = useCallback((name) => {
+    setTextFocus(name);
+  }, [textFocus]);
+
   return (
     <>
       <Header
@@ -15,13 +26,43 @@ const DrawerMenu = ({ navigation }) => {
           </MenuView>
         }
       />
-      {/* <Button title="WWW" onPress={
-        () => navigation.navigate("Detail", { pageTitle: "RNDOCS", pageName: "TheBasics" })}></Button> */}
       <Container>
-        <Dropdown title="React Native Docs" pageTitle="RNDOCS" navigation={navigation}/>
-        <Dropdown title="Components" pageTitle="COMPONENTS" navigation={navigation} />
-        <Dropdown title="API" pageTitle="RNDOCS" navigation={navigation} />
-        <Dropdown title="Example" pageTitle="RNDOCS" navigation={navigation}/>
+        <Dropdown
+          title="React Native Docs"
+          pageTitle="RNDOCS"
+          show={visibleBox}
+          textFocus={textFocus}
+          onToggleShow={handleToggleShow}
+          onPageButtonClick={handlePageButtonClick}
+          navigation={navigation}
+        />
+        <Dropdown
+          title="Components"
+          pageTitle="COMPONENTS"
+          show={visibleBox}
+          textFocus={textFocus}
+          onToggleShow={handleToggleShow}
+          onPageButtonClick={handlePageButtonClick}
+          navigation={navigation}
+        />
+        <Dropdown
+          title="API"
+          pageTitle="APIS"
+          show={visibleBox}
+          textFocus={textFocus}
+          onToggleShow={handleToggleShow}
+          onPageButtonClick={handlePageButtonClick}
+          navigation={navigation}
+        />
+        <Dropdown
+          title="Example"
+          pageTitle="EXAMPLES"
+          show={visibleBox}
+          textFocus={textFocus}
+          onToggleShow={handleToggleShow}
+          onPageButtonClick={handlePageButtonClick}
+          navigation={navigation}
+        />
       </Container>
     </>
   );

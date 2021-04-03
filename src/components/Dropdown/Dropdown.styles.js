@@ -3,7 +3,7 @@ import styled from '@emotion/native';
 export const DropdownContainer = styled.ScrollView`
   width: 100%;
   flex: 1;
-  padding-top: 35px;
+  padding-top: 25px;
   margin-left: 6%;
 `;
 

@@ -11,7 +11,7 @@ const DrawerNavigator = () => {
   return (
     <Drawer.Navigator
       screenOptions={{ headerShown: false }}
-      drawerContent={DrawerMenu}
+      drawerContent={props => <DrawerMenu {...props} />}
       drawerStyle={css`
         width: 80%;
       `}
@@ -29,4 +29,3 @@ const DrawerNavigator = () => {
 };
 
 export default DrawerNavigator;
-
