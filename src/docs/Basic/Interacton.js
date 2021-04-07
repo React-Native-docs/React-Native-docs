@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, Image, Dimensions, View, ScrollView } from 'react-native';
 import { OuterView, SrcTouchable } from '~/styles/innerpageStyle';
 import { TextMarkdown, CodeMarkdown } from '~/components/Markdown/MarkdownBlock';
-import * as content from "./InteractonComponents";
+import * as content from "./InteractonContent";
 import ButtonBasics from "../../examples/ButtonBasics";
 import Touchables from "../../examples/Touchables"
 import AnimationExample from "../../examples/AnimationExample";
