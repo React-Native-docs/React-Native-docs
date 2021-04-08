@@ -14,7 +14,6 @@ import Workflow from '~/docs/Basic/Workflow';
 import TheBasics from '~/docs/Basic/TheBasics';
 import EnvironmentSetup from '~/docs/Basic/EnvironmentSetup';
 
-import PageActivityIndicator from "~/docs/CoreComponents/ActivityIndicator";
 import PageButton from "~/docs/CoreComponents/Button";
 import PageCoreComponentsAndAPIs from "~/docs/CoreComponents/CoreComponentsAndAPIs";
 import PageFlatList from "~/docs/CoreComponents/FlatList";
@@ -53,7 +52,6 @@ const PAGE = {
         GuidesiOS: <GuidesiOS />,
     },
     COMPONENTS: {
-        PageActivityIndicator: <PageActivityIndicator />,
         PageButton: <PageButton />,
         PageCoreComponentsAndAPIs: <PageCoreComponentsAndAPIs />,
         PageFlatList: <PageFlatList />,
