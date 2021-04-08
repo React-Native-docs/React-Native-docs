@@ -22,7 +22,13 @@ const Detail = ({ navigation, route }, i) => {
     setSearch(false)
     setSearchValue('');
     setSearchResult([]);
-  }, [route.params.pageTitle, route.params.pageName])
+  }, [route.params.pageTitle, route.params.pageName]);
+
+  const aRef = React.useRef();
+	React.useEffect(() => { 
+		aRef.current.scrollTo({ x: 0, y: 0, animated: true })
+  }, [route.params.pageTitle, route.params.pageName]);
+
 	return (
 		<>
       <Header
@@ -53,7 +59,7 @@ const Detail = ({ navigation, route }, i) => {
             </Header.Button>
         }
       />
-      <Container>
+      <Container ref={aRef}>
         {
           search ? 
             <SearchArea navigation={navigation} searchResult={searchResult} />
