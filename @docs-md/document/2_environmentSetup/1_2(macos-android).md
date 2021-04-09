@@ -26,10 +26,10 @@ While you can use any editor of your choice to develop your app, you will need t
 
 We recommend installing Node and Watchman using [Homebrew](http://brew.sh/). Run the following commands in a Terminal after installing Homebrew:
 
-```jsx
+\`\`\`jsx
 brew install node
 brew install watchman
-```
+\`\`\`
 
 If you have already installed Node on your system, make sure it is Node 12 or newer.
 
@@ -39,9 +39,9 @@ If you have already installed Node on your system, make sure it is Node 12 or ne
 
 We recommend installing JDK using [Homebrew](http://brew.sh/). Run the following commands in a Terminal after installing Homebrew:
 
-```jsx
+\`\`\`jsx
 brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
-```
+\`\`\`
 
 If you have already installed JDK on your system, make sure it is JDK 8 or newer.
 
@@ -53,9 +53,9 @@ Setting up your development environment can be somewhat tedious if you're new to
 
 [Download and install Android Studio](https://developer.android.com/studio/index.html). While on Android Studio installation wizard, make sure the boxes next to all of the following items are checked:
 
-- `Android SDK`
-- `Android SDK Platform`
-- `Android Virtual Device`
+- \`Android SDK\`
+- \`Android SDK Platform\`
+- \`Android Virtual Device\`
 
 Then, click "Next" to install all of these components.
 
@@ -65,7 +65,7 @@ Once setup has finalized and you're presented with the Welcome screen, proceed t
 
 #### 2. Install the Android SDK
 
-Android Studio installs the latest Android SDK by default. Building a React Native app with native code, however, requires the `Android 10 (Q)` SDK in particular. Additional Android SDKs can be installed through the SDK Manager in Android Studio.
+Android Studio installs the latest Android SDK by default. Building a React Native app with native code, however, requires the \`Android 10 (Q)\` SDK in particular. Additional Android SDKs can be installed through the SDK Manager in Android Studio.
 
 To do that, open Android Studio, click on "Configure" button and select "SDK Manager".
 
@@ -73,12 +73,12 @@ To do that, open Android Studio, click on "Configure" button and select "SDK Man
 
 > The SDK Manager can also be found within the Android Studio "Preferences" dialog, under **Appearance & Behavior** → **System Settings** → **Android SDK**.
 
-Select the "SDK Platforms" tab from within the SDK Manager, then check the box next to "Show Package Details" in the bottom right corner. Look for and expand the `Android 10 (Q)` entry, then make sure the following items are checked:
+Select the "SDK Platforms" tab from within the SDK Manager, then check the box next to "Show Package Details" in the bottom right corner. Look for and expand the \`Android 10 (Q)\` entry, then make sure the following items are checked:
 
-- `Android SDK Platform 29`
-- `Intel x86 Atom_64 System Image` or `Google APIs Intel x86 Atom System Image`
+- \`Android SDK Platform 29\`
+- \`Intel x86 Atom_64 System Image\` or \`Google APIs Intel x86 Atom System Image\`
 
-Next, select the "SDK Tools" tab and check the box next to "Show Package Details" here as well. Look for and expand the "Android SDK Build-Tools" entry, then make sure that `29.0.2` is selected and check the "Android SDK Command-line Tools (latest)".
+Next, select the "SDK Tools" tab and check the box next to "Show Package Details" here as well. Look for and expand the "Android SDK Build-Tools" entry, then make sure that \`29.0.2\` is selected and check the "Android SDK Command-line Tools (latest)".
 
 Finally, click "Apply" to download and install the Android SDK and related build tools.
 
@@ -86,51 +86,51 @@ Finally, click "Apply" to download and install the Android SDK and related build
 
 The React Native tools require some environment variables to be set up in order to build apps with native code.
 
-Add the following lines to your `$HOME/.bash_profile` or `$HOME/.bashrc` (if you are using `zsh` then `~/.zprofile` or `~/.zshrc`) config file:
+Add the following lines to your \`$HOME/.bash_profile\` or \`$HOME/.bashrc\` (if you are using \`zsh\` then \`~/.zprofile\` or \`~/.zshrc\`) config file:
 
-```jsx
+\`\`\`jsx
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-```
+\`\`\`
 
-> `.bash_profile` is specific to `bash`. If you're using another shell, you will need to edit the appropriate shell-specific config file.
+> \`.bash_profile\` is specific to \`bash\`. If you're using another shell, you will need to edit the appropriate shell-specific config file.
 
-Type `source $HOME/.bash_profile` for `bash` or `source $HOME/.zprofile` to load the config into your current shell. Verify that ANDROID_HOME has been set by running `echo $ANDROID_HOME` and the appropriate directories have been added to your path by running `echo $PATH`.
+Type \`source $HOME/.bash_profile\` for \`bash\` or \`source $HOME/.zprofile\` to load the config into your current shell. Verify that ANDROID_HOME has been set by running \`echo $ANDROID_HOME\` and the appropriate directories have been added to your path by running \`echo $PATH\`.
 
 > Please make sure you use the correct Android SDK path. You can find the actual location of the SDK in the Android Studio "Preferences" dialog, under **Appearance & Behavior** → **System Settings** → **Android SDK**.
 
 ### React Native Command Line Interface
 
-React Native has a built-in command line interface. Rather than install and manage a specific version of the CLI globally, we recommend you access the current version at runtime using `npx`, which ships with Node.js. With `npx react-native <command>`, the current stable version of the CLI will be downloaded and executed at the time the command is run.
+React Native has a built-in command line interface. Rather than install and manage a specific version of the CLI globally, we recommend you access the current version at runtime using \`npx\`, which ships with Node.js. With \`npx react-native <command>\`, the current stable version of the CLI will be downloaded and executed at the time the command is run.
 
 ## Creating a new application
 
-> If you previously installed a global `react-native-cli` package, please remove it as it may cause unexpected issues.
+> If you previously installed a global \`react-native-cli\` package, please remove it as it may cause unexpected issues.
 
-React Native has a built-in command line interface, which you can use to generate a new project. You can access it without installing anything globally using `npx`, which ships with Node.js. Let's create a new React Native project called "AwesomeProject":
+React Native has a built-in command line interface, which you can use to generate a new project. You can access it without installing anything globally using \`npx\`, which ships with Node.js. Let's create a new React Native project called "AwesomeProject":
 
-```jsx
+\`\`\`jsx
 npx react-native init AwesomeProject
-```
+\`\`\`
 
 This is not necessary if you are integrating React Native into an existing application, if you "ejected" from Expo, or if you're adding Android support to an existing React Native project (see [Integration with Existing Apps](https://reactnative.dev/docs/integration-with-existing-apps)). You can also use a third-party CLI to init your React Native app, such as [Ignite CLI](https://github.com/infinitered/ignite).
 
 ### [Optional] Using a specific version or template
 
-If you want to start a new project with a specific React Native version, you can use the `--version` argument:
+If you want to start a new project with a specific React Native version, you can use the \`--version\` argument:
 
-```jsx
+\`\`\`jsx
 npx react-native init AwesomeProject --version X.XX.X
-```
+\`\`\`
 
-You can also start a project with a custom React Native template, like TypeScript, with `--template` argument:
+You can also start a project with a custom React Native template, like TypeScript, with \`--template\` argument:
 
-```jsx
+\`\`\`jsx
 npx react-native init AwesomeTSProject --template react-native-template-typescript
-```
+\`\`\`
 
 ## Preparing the Android device
 
@@ -144,7 +144,7 @@ If you have a physical Android device, you can use it for development in place o
 
 ### Using a virtual device
 
-If you use Android Studio to open `./AwesomeProject/android`, you can see the list of available Android Virtual Devices (AVDs) by opening the "AVD Manager" from within Android Studio. Look for an icon that looks like this:
+If you use Android Studio to open \`./AwesomeProject/android\`, you can see the list of available Android Virtual Devices (AVDs) by opening the "AVD Manager" from within Android Studio. Look for an icon that looks like this:
 
 ![Android Studio AVD Manager](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAIAAABCYLJOAAACLUlEQVR4Ab2Vw6IfPxiG3zfJHPPP2rbdfW3rProsLqCr7rqsbVur2raPPb+Z5Du2+YyRJ87HtLQ0dAIKnYNBQ5BEI4hI271BEIjUNZAgqbUm2WovyRLpyVMnfd83xggq3ATDMHTOzZo1q3ev3iRbXV4RKZEuXLBQayPOAQSESjlnDx85nJ+fjwpa7zUlaHPj2CO/oLTUNnTR8Wb2kvGeZ9rVbwJxTuArm69haAMaqtJXgnZ5y1tVmxKsMoqgKS0p2z1+WdEgItWXjp4XJEiCHesVZ50LnbUOrcE0LQURk2BsYHU0ASmnuqUgrfaSEAcvWs9eMQbKGe0J0L17j8TERJICW+hnx0Ylk6o17SAVF6U1lL3/bld+UbrAzpgx9f///4sEeT/TH955srMwkk2wNeUlROCsiBNCicu7dH+zH5BUgChapThh0NrYqCRpbTsoxZiEKBu60EbSsr+m5Z7RaoiIJQkQkv3lz8De/8/0tJEWekmKdSXb9MUjRYK7L3bk+996/7PpT/Zr6yIko0xcSsK0r2n33/+4NLjnXNIA0nz7kizy/b379ly6ckGIb+kPUhP7zZu5zTN/B/ZzaL+lxPecN2O7YsKbL2edOLLF5f3/v/+zsrOSk1MAxEb1z8j5dezaVggTYiYDyCnIP359q4gENl4EDdJwfLPWAiCplAptABEHp2oMKSfljzTaa0W/GVPxXkQ8EwWw5gCs+VhCK7w1/25o0ZHOj8dd7C0GRnwgNA5r8rwAAAAASUVORK5CYII=)
 
@@ -158,15 +158,15 @@ Click "Next" then "Finish" to create your AVD. At this point you should be able 
 
 First, you will need to start Metro, the JavaScript bundler that ships with React Native. Metro "takes in an entry file and various options, and returns a single JavaScript file that includes all your code and its dependencies."—[Metro Docs](https://facebook.github.io/metro/docs/concepts)
 
-To start Metro, run `npx react-native start` inside your React Native project folder:
+To start Metro, run \`npx react-native start\` inside your React Native project folder:
 
-```jsx
+\`\`\`jsx
 npx react-native start
-```
+\`\`\`
 
-`react-native start` starts Metro Bundler.
+\`react-native start\` starts Metro Bundler.
 
-> If you use the Yarn package manager, you can use `yarn` instead of `npx` when running React Native commands inside an existing project.
+> If you use the Yarn package manager, you can use \`yarn\` instead of \`npx\` when running React Native commands inside an existing project.
 
 > If you're familiar with web development, Metro is a lot like webpack—for React Native apps. Unlike Kotlin or Java, JavaScript isn't compiled—and neither is React Native. Bundling isn't the same as compiling, but it can help improve startup performance and translate some platform-specific JavaScript into more JavaScript.
 
@@ -174,15 +174,15 @@ npx react-native start
 
 Let Metro Bundler run in its own terminal. Open a new terminal inside your React Native project folder. Run the following:
 
-```jsx
+\`\`\`jsx
 npx react-native run-android
-```
+\`\`\`
 
 If everything is set up correctly, you should see your new app running in your Android emulator shortly.
 
 ![AwesomeProject on Android](https://reactnative.dev/assets/images/GettingStartedAndroidSuccessMacOS-b854b8ed8b950832a43645e723a98961.png)
 
-`npx react-native run-android` is one way to run your app - you can also run it directly from within Android Studio.
+\`npx react-native run-android\` is one way to run your app - you can also run it directly from within Android Studio.
 
 > If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting#content) page.
 
@@ -190,8 +190,8 @@ If everything is set up correctly, you should see your new app running in your A
 
 Now that you have successfully run the app, let's modify it.
 
-- Open `App.js` in your text editor of choice and edit some lines.
-- Press the `R` key twice or select `Reload` from the Developer Menu (`⌘M`) to see your changes!
+- Open \`App.js\` in your text editor of choice and edit some lines.
+- Press the \`R\` key twice or select \`Reload\` from the Developer Menu (\`⌘M\`) to see your changes!
 
 ### That's it!
 
