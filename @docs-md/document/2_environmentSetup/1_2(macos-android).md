@@ -1,92 +1,99 @@
-# Setting up the development environment
+# 개발 환경 설정
 
-This page will help you install and build your first React Native app.
 
-**If you are new to mobile development**, the easiest way to get started is with Expo CLI. Expo is a set of tools built around React Native and, while it has many [features](https://expo.io/features), the most relevant feature for us right now is that it can get you writing a React Native app within minutes. You will only need a recent version of Node.js and a phone or emulator. If you'd like to try out React Native directly in your web browser before installing any tools, you can try out [Snack](https://snack.expo.io/).
+이 페이지는 React Native 앱을 설치하고 빌드하는 첫 걸음에 도움이 됩니다.
 
-**If you are already familiar with mobile development**, you may want to use React Native CLI. It requires Xcode or Android Studio to get started. If you already have one of these tools installed, you should be able to get up and running within a few minutes. If they are not installed, you should expect to spend about an hour installing and configuring them.
+**모바일 개발이 처음 인 경우**, 시작하는 가장 쉬운 방법은 Expo CLI를 사용하는 것입니다. Expo는 React Native를 중심으로 구축 된 도구 모음이며 [features](https://expo.io/features)이 많지만 현재 가장 관련성이 높은 기능은 몇 분 안에 React Native 앱을 작성할 수 있다는 것입니다. 최신 버전의 Node.js와 핸드폰 또는 에뮬레이터만 있으면 됩니다. 도구를 설치하기 전에 웹 브라우저에서 직접 React Native를 사용해보고 싶다면 [Snack](https://snack.expo.io/)를 사용해보세요.
 
-## React Native CLI Quickstart
+**이미 모바일 개발에 익숙한 경우**, React Native CLI를 사용할 수 있습니다. 시작하려면 Xcode 또는 Android Studio가 필요합니다. 이러한 도구 중 하나가 이미 설치되어있는 경우 몇 분 내에 시작하여 실행할 수 있습니다. 설치되지 않은 경우 설치 및 구성하는 데 약 1 시간이 소요됩니다.
 
-Follow these instructions if you need to build native code in your project. For example, if you are integrating React Native into an existing application, or if you "ejected" from Expo, you'll need this section.
+## React Native CLI 빠르게 시작하기
 
-The instructions are a bit different depending on your development operating system, and whether you want to start developing for iOS or Android. If you want to develop for both Android and iOS, that's fine - you can pick one to start with, since the setup is a bit different.
+프로젝트에서 네이티브 코드를 빌드해야하는 경우 다음 지침을 따르세요. 예를 들어 React Native를 기존 애플리케이션에 통합하거나 Expo에서 "ejected"한 경우 이 섹션이 필요합니다.
 
-#### Development OS[#](https://reactnative.dev/docs/environment-setup#development-os): macOS
+지침은 개발 운영 체제 및 iOS 또는 Android 용 개발을 시작할지 여부에 따라 약간 다릅니다. Android와 iOS 공용으로 개발하고 싶다면 괜찮습니다. 설정이 약간 다르기 때문에 어떤 것을 시작할지 하나를 선택할 수 있습니다.
 
-#### Target OS[#](https://reactnative.dev/docs/environment-setup#target-os): Android
+#### OS 개발[#](https://reactnative.dev/docs/environment-setup#development-os): macOS
+
+#### 타겟 OS[#](https://reactnative.dev/docs/environment-setup#target-os): Android
 
 ## Installing dependencies[#](https://reactnative.dev/docs/environment-setup#installing-dependencies)
 
-You will need Node, Watchman, the React Native command line interface, a JDK, and Android Studio.
+Node, Watchman, React Native command line 인터페이스, JDK 및 Android Studio가 필요합니다.
 
-While you can use any editor of your choice to develop your app, you will need to install Android Studio in order to set up the necessary tooling to build your React Native app for Android.
+선택한 편집기를 사용하여 앱을 개발할 수 있지만 Android 용 React Native 앱을 빌드하는 데 필요한 도구를 설정하려면 Android Studio를 설치해야합니다.
+
 
 ### Node & Watchman
 
-We recommend installing Node and Watchman using [Homebrew](http://brew.sh/). Run the following commands in a Terminal after installing Homebrew:
+[Homebrew](http://brew.sh/)를 사용하여 Node 및 Watchman을 설치하는 것이 좋습니다. Homebrew를 설치 한 후 터미널에서 다음 명령을 실행하십시오:
 
 ```jsx
 brew install node
 brew install watchman
 ```
 
-If you have already installed Node on your system, make sure it is Node 12 or newer.
+시스템에 Node를 이미 설치 한 경우 Node 12 이상인지 확인하십시오.
 
-[Watchman](https://facebook.github.io/watchman) is a tool by Facebook for watching changes in the filesystem. It is highly recommended you install it for better performance.
+[Watchman](https://facebook.github.io/watchman)은 파일 시스템의 변경 사항을 감시하기위한 Facebook 도구입니다. 더 나은 성능을 위해 설치하는 것이 좋습니다.
+
 
 ### Java Development Kit
 
-We recommend installing JDK using [Homebrew](http://brew.sh/). Run the following commands in a Terminal after installing Homebrew:
+[Homebrew](http://brew.sh/)를 사용하여 JDK을 설치하는 것이 좋습니다. Homebrew를 설치 한 후 터미널에서 다음 명령을 실행하십시오:
 
 ```jsx
 brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
 ```
 
-If you have already installed JDK on your system, make sure it is JDK 8 or newer.
+시스템에 이미 JDK를 설치 한 경우 JDK 8 이상인지 확인하십시오.
+
 
 ### Android development environment
 
-Setting up your development environment can be somewhat tedious if you're new to Android development. If you're already familiar with Android development, there are a few things you may need to configure. In either case, please make sure to carefully follow the next few steps.
+Android 개발을 처음 접하는 경우 개발 환경 설정이 다소 지루할 수 있습니다. Android 개발에 이미 익숙한 경우 구성해야 할 몇 가지 사항이 있습니다. 두 경우 모두 다음 몇 단계를 주의 깊게 따르십시오:
+
 
 #### 1. Install Android Studio
 
-[Download and install Android Studio](https://developer.android.com/studio/index.html). While on Android Studio installation wizard, make sure the boxes next to all of the following items are checked:
+[Download and install Android Studio](https://developer.android.com/studio/index.html). Android Studio 설치 마법사에서 다음 모든 항목 옆의 확인란이 선택되어 있는지 확인합니다:
 
 - `Android SDK`
 - `Android SDK Platform`
 - `Android Virtual Device`
 
-Then, click "Next" to install all of these components.
+그런 다음 "다음"을 클릭하여 이러한 구성 요소를 모두 설치합니다.
 
-> If the checkboxes are grayed out, you will have a chance to install these components later on.
+> 확인란이 회색으로 표시되면 나중에 이러한 구성 요소를 설치할 수 있습니다.
 
-Once setup has finalized and you're presented with the Welcome screen, proceed to the next step.
+설정이 완료되고 시작 화면이 표시되면 다음 단계로 진행합니다.
+
 
 #### 2. Install the Android SDK
 
-Android Studio installs the latest Android SDK by default. Building a React Native app with native code, however, requires the `Android 10 (Q)` SDK in particular. Additional Android SDKs can be installed through the SDK Manager in Android Studio.
+Android Studio는 기본적으로 최신 Android SDK를 설치합니다. 그러나 네이티브 코드로 React Native 앱을 빌드하려면 특히`Android 10 (Q)` SDK가 필요합니다. Android Studio의 SDK Manager를 통해 추가 Android SDK를 설치할 수 있습니다.
 
-To do that, open Android Studio, click on "Configure" button and select "SDK Manager".
+이를 위해 Android Studio를 열고 "Configure" 버튼을 클릭 한 다음 "SDK Manager"를 선택합니다.
 
 ![Android Studio Welcome](https://reactnative.dev/assets/images/GettingStartedAndroidStudioWelcomeMacOS-cbb28b4b70c4158c1afd02ddb6b12f4a.png)
 
-> The SDK Manager can also be found within the Android Studio "Preferences" dialog, under **Appearance & Behavior** → **System Settings** → **Android SDK**.
+> SDK Manager는 **Appearance & Behavior** → **System Settings** → **Android SDK** 의 Android Studio "Preferences" 대화 상자에서도 찾을 수 있습니다.
 
-Select the "SDK Platforms" tab from within the SDK Manager, then check the box next to "Show Package Details" in the bottom right corner. Look for and expand the `Android 10 (Q)` entry, then make sure the following items are checked:
+SDK Manager 내에서 "SDK Platforms" 탭을 선택한 다음 오른쪽 하단의 "Show Package Details" 옆에있는 확인란을 선택합니다. `Android 10 (Q)`항목을 찾아 확장 한 후 다음 항목이 선택되었는지 확인합니다:
 
 - `Android SDK Platform 29`
 - `Intel x86 Atom_64 System Image` or `Google APIs Intel x86 Atom System Image`
 
-Next, select the "SDK Tools" tab and check the box next to "Show Package Details" here as well. Look for and expand the "Android SDK Build-Tools" entry, then make sure that `29.0.2` is selected and check the "Android SDK Command-line Tools (latest)".
+그런 다음 "SDK Tools" 탭을 선택하고 여기에서 "Show Package Details" 옆의 확인란도 선택합니다. "Android SDK Build-Tools" 항목을 찾아 펼친 다음, `29.0.2`이 선택되어 있는지 확인하고 "Android SDK Command-line Tools (latest)"를 확인합니다.
 
-Finally, click "Apply" to download and install the Android SDK and related build tools.
+마지막으로 "Apply" 을 클릭하여 Android SDK 및 관련 빌드 도구를 다운로드하고 설치합니다.
+
 
 #### 3. Configure the ANDROID_HOME environment variable
 
-The React Native tools require some environment variables to be set up in order to build apps with native code.
+React Native 도구는 네이티브 코드로 앱을 빌드하기 위해 몇 가지 환경 변수를 설정해야합니다.
 
-Add the following lines to your `$HOME/.bash_profile` or `$HOME/.bashrc` (if you are using `zsh` then `~/.zprofile` or `~/.zshrc`) config file:
+`$HOME/.bash_profile` 또는 `$HOME/.bashrc`(`zsh`를 사용하는 경우 `~/.zprofile` or `~/.zshrc`) 구성 파일에 다음 행을 추가하십시오:
 
 ```jsx
 export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -96,7 +103,7 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 ```
 
-> `.bash_profile` is specific to `bash`. If you're using another shell, you will need to edit the appropriate shell-specific config file.
+> `.bash_profile` 은 `bash` 에만 해당됩니다. 다른 shell 을 사용하는 경우 적절한 shell 별 구성 파일을 편집해야합니다.
 
 Type `source $HOME/.bash_profile` for `bash` or `source $HOME/.zprofile` to load the config into your current shell. Verify that ANDROID_HOME has been set by running `echo $ANDROID_HOME` and the appropriate directories have been added to your path by running `echo $PATH`.
 
