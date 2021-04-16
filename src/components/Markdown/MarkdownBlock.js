@@ -1,12 +1,10 @@
-import {Linking, Modal, View, Text, Pressable, StyleSheet} from "react-native";
-import React, {useState} from "react";
+import React, { useState } from "react";
+import { Linking, Modal, View, Text, Pressable, StyleSheet, Dimensions } from "react-native";
 import Markdown from 'react-native-markdown-package';
 import markdownStyle from '~/styles/markdownStyle';
-import { OuterView, SrcTouchable } from '~/styles/innerpageStyle';
-import HelloWorld from "../../examples/HelloWorld";
-import { Dimensions } from 'react-native';
+import { SrcTouchable } from '~/styles/innerpageStyle';
+
 const windowWidth = Dimensions.get('window').width;
-const windowHeight = Dimensions.get('window').height;
 
 export const TextMarkdown = (props) => {
     return (
@@ -18,7 +16,6 @@ export const TextMarkdown = (props) => {
         </Markdown>
     );
 };
-
 
 export const CodeMarkdown = (props) => {
     const [modalVisible, setModalVisible] = useState(false);
@@ -53,6 +50,17 @@ export const CodeMarkdown = (props) => {
     );
 };
 
+export const ModalScreenMarkDown = (props) => {
+    return (
+        <SrcTouchable onPress={() => props.navigation.navigate('ModalScreen', { exampleFile: props.exampleFile})}>
+            <Markdown
+                styles={markdownStyle.codeBlock}
+            >
+                {props.source}
+            </Markdown>
+        </SrcTouchable>
+    )
+};
 
 const styles = StyleSheet.create({
     centeredView: {

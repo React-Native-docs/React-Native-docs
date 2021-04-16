@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, Image, Dimensions, View, ScrollView } from 'react-native';
-import { OuterView, SrcTouchable } from '~/styles/innerpageStyle';
-import { TextMarkdown, CodeMarkdown } from '~/components/Markdown/MarkdownBlock';
+import { ScrollView } from 'react-native';
+import { OuterView } from '~/styles/innerpageStyle';
+import { TextMarkdown, CodeMarkdown, ModalScreenMarkDown } from '~/components/Markdown/MarkdownBlock';
 import * as content from "./InteractonContent";
 import ButtonBasics from "../../examples/ButtonBasics";
 import Touchables from "../../examples/Touchables"
@@ -30,9 +30,9 @@ export default Interacton = (props) => {
 				<TextMarkdown source={content.text3_3}/>
 				<CodeMarkdown source={content.code3_3} exampleFile={<Animated/>}/>
 				<TextMarkdown source={content.text3_4}/>
-				<CodeMarkdown source={content.code3_5} exampleFile={<Animated2/>}/>
+				<ModalScreenMarkDown navigation={props} source={content.code3_5} exampleFile={<Animated2/>}/>
 				<TextMarkdown source={content.text3_6}/>
-				<CodeMarkdown source={content.code3_6} exampleFile={<Animated2/>}/>
+				<ModalScreenMarkDown navigation={props} source={content.code3_6} exampleFile={<Animated2/>}/>
 				<TextMarkdown source={content.text3_7}/>
 				<CodeMarkdown source={content.code3_7} exampleFile={<LayoutAnimations/>}/>
 				<TextMarkdown source={content.text3_8}/>
