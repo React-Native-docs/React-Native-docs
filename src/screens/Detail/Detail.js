@@ -64,9 +64,8 @@ const Detail = ({ navigation, route }, i) => {
           search ? 
             <SearchArea navigation={navigation} searchResult={searchResult} />
             :
-            (!!pageTitle && !!pageName ) ? PAGE[pageTitle][pageName] : <></> //문서 Scroll View 영역
+            (!!pageTitle && !!pageName ) ? PAGE[pageTitle][pageName](navigation) : <></> //문서 Scroll View 영역
         }
-
       </Container>
     </>
 	);

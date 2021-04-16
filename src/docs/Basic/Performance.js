@@ -7,7 +7,7 @@ import * as content from "./PerformanceContent";
 // Performance
 
 
-const Performance = () => {
+const Performance = (props) => {
 	return (
 		<ScrollView
 			contentInsetAdjustmentBehavior="automatic">

@@ -10,7 +10,7 @@ import Animated from "../../examples/Animated";
 import Animated2 from "../../examples/Animated2";
 import LayoutAnimations from "../../examples/LayoutAnimations";
 
-export default Interacton = () => {
+export default Interacton = (props) => {
 	return (
 		<ScrollView
 			contentInsetAdjustmentBehavior="automatic">

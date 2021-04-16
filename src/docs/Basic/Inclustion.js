@@ -4,7 +4,7 @@ import { OuterView, SrcTouchable } from '~/styles/innerpageStyle';
 import { TextMarkdown, CodeMarkdown } from '~/components/Markdown/MarkdownBlock';
 import * as content from "./InclustionContent";
 
-export default Inclustion = () => {
+export default Inclustion = (props) => {
 	return (
 		<ScrollView
 			contentInsetAdjustmentBehavior="automatic">
