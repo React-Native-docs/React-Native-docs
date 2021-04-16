@@ -15,6 +15,8 @@ export const ModalView = styled.View`
 `;
 
 export const CloseButton = styled.TouchableOpacity`
-    z-index: 10;
-    align-self: flex-end;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 5;
 `;
