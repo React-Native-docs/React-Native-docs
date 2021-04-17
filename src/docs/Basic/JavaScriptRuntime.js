@@ -4,7 +4,7 @@ import { OuterView, SrcTouchable } from '~/styles/innerpageStyle';
 import { TextMarkdown, CodeMarkdown } from '~/components/Markdown/MarkdownBlock';
 import * as content from "./JavaScriptRuntimeContent";
 
-export default JavaScriptRuntime = () => {
+export default JavaScriptRuntime = (props) => {
 	return (
 		<ScrollView
 			contentInsetAdjustmentBehavior="automatic">

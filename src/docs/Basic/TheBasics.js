@@ -31,7 +31,7 @@ import SectionListBasics from "../../examples/SectionListBasics";
 import * as content from './TheBasicsContent';
 
 
-const TheBasics = () => {
+const TheBasics = (props) => {
 	return (
 		<ScrollView
 			contentInsetAdjustmentBehavior="automatic">

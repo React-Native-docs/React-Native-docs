@@ -3,7 +3,7 @@ import { StyleSheet, Text, Image, Dimensions, View, ScrollView } from 'react-nat
 import Markdown from 'react-native-markdown-package';
 import markdownStyle from '~/styles/markdownStyle';
 
-export default PageButton = () => {
+export default PageButton = (props) => {
 	return (
 		<ScrollView style={{ flex: 1 }}>
 			<Markdown

@@ -1,12 +1,10 @@
-import {Linking, Modal, View, Text, Pressable, StyleSheet} from "react-native";
-import React, {useState} from "react";
+import React, { useState } from "react";
+import { Linking, Modal } from "react-native";
 import Markdown from 'react-native-markdown-package';
 import markdownStyle from '~/styles/markdownStyle';
-import { OuterView, SrcTouchable } from '~/styles/innerpageStyle';
-import HelloWorld from "../../examples/HelloWorld";
-import { Dimensions } from 'react-native';
-const windowWidth = Dimensions.get('window').width;
-const windowHeight = Dimensions.get('window').height;
+import { ModalContainer, ModalView, CloseButton } from './MarkdownBlock.styles';
+import { SrcTouchable } from '~/styles/innerpageStyle';
+import CloseIcon from '~/assets/icons/close-icon.svg';
 
 export const TextMarkdown = (props) => {
     return (
@@ -18,7 +16,6 @@ export const TextMarkdown = (props) => {
         </Markdown>
     );
 };
-
 
 export const CodeMarkdown = (props) => {
     const [modalVisible, setModalVisible] = useState(false);
@@ -37,52 +34,27 @@ export const CodeMarkdown = (props) => {
                     setModalVisible(!modalVisible);
                 }}
             >
-                <View style={styles.centeredView}>
-                    <View style={[styles.modalView, {width: windowWidth}]}>
+                <ModalContainer>
+                    <CloseButton onPress={() => setModalVisible(!modalVisible)}>
+                        <CloseIcon />
+                    </CloseButton>
+                    <ModalView>
                         {props.exampleFile}
-                        <Pressable
-                            style={[styles.button, styles.buttonClose]}
-                            onPress={() => setModalVisible(!modalVisible)}
-                        >
-                            <Text style={styles.textStyle}>Hide Modal</Text>
-                        </Pressable>
-                    </View>
-                </View>
+                    </ModalView>
+                </ModalContainer>
             </Modal>
         </SrcTouchable>
     );
 };
 
-
-const styles = StyleSheet.create({
-    centeredView: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-    },
-    modalView: {
-        backgroundColor: "white",
-        flex: 1,
-
-    },
-    button: {
-        borderRadius: 20,
-        padding: 10,
-        elevation: 2
-    },
-    buttonOpen: {
-        backgroundColor: "#F194FF",
-    },
-    buttonClose: {
-        backgroundColor: "#2196F3",
-    },
-    textStyle: {
-        color: "white",
-        fontWeight: "bold",
-        textAlign: "center"
-    },
-    modalText: {
-        marginBottom: 15,
-        textAlign: "center"
-    }
-});
+export const ModalScreenMarkDown = (props) => {
+    return (
+        <SrcTouchable onPress={() => props.navigation.navigate('ModalScreen', { exampleFile: props.exampleFile })}>
+            <Markdown
+                styles={markdownStyle.codeBlock}
+            >
+                {props.source}
+            </Markdown>
+        </SrcTouchable>
+    )
+};

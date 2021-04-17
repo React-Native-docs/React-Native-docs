@@ -4,7 +4,7 @@ import { OuterView, SrcTouchable } from '~/styles/innerpageStyle';
 import { TextMarkdown, CodeMarkdown } from '~/components/Markdown/MarkdownBlock';
 import * as content from "./ConnectivityContent";
 
-export default Connectivity = () => {
+export default Connectivity = (props) => {
 	return (
 		<ScrollView
 			contentInsetAdjustmentBehavior="automatic">
