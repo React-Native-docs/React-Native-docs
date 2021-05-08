@@ -108,12 +108,6 @@ const Home = ({ navigation }) => {
                   pageTitle="RNDOCS"
                   pageName="TheBasics"
                 />
-                <ContentBlock
-                  title="Example"
-                  subtitle="이 문서에는 리액트네이티브의 예제를 보여줍니다. 핸드폰에서 바로 실행해 볼 수 있습니다."
-                  pageTitle="RNDOCS"
-                  pageName="TheBasics"
-                />
               </ContentView>
               <GithubView>
                 <GithubView.Text>
