@@ -1,0 +1,76 @@
+`
+# ActivityIndicator
+
+Displays a circular loading indicator.
+
+## Example
+
+ActivityIndicator Function Component Example
+	
+\`\`\`jsx
+
+import React from "react";
+import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
+
+const App = () => (
+  <View style={[styles.container, styles.horizontal]}>
+    <ActivityIndicator />
+    <ActivityIndicator size="large" />
+    <ActivityIndicator size="small" color="#0000ff" />
+    <ActivityIndicator size="large" color="#00ff00" />
+  </View>
+);
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center"
+  },
+  horizontal: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    padding: 10
+  }
+});
+
+export default App;
+\`\`\`
+
+# 참조
+
+## Props
+
+###[View Props](https://reactnative.dev/docs/view#props)
+
+	Inherits[View Props](https://reactnative.dev/docs/view#props).
+
+### `animating`
+	회전원이 회전하도록 하는지
+	Whether to show the indicator (`true`) or hide it(`false`).
+
+| TYPE | DEFAULT |
+| ---- | ------- |
+| bool | true |
+
+###`color`
+	회전원의 색상입니다.
+	The foreground color of the spinner.
+
+| TYPE | DEFAULT |
+| ----- | ------------------------------------- |
+| color | Null(시스템 기본색상) < Android 전용 > |
+|       | (회색)'#999999' < iOS 전용 >            |
+
+###`hidesWhenStopped` ** iOS **
+	애니메이션하지 않을 때 표시기를 숨길 지 여부입니다.
+| TYPE | DEFAULT |
+| ---- | ------- |
+| bool | true |
+
+###`size`
+	회전원의 크기입니다.
+| TYPE | DEFAULT |
+| ---------------------- | ------- |
+| Enum('small', 'large') | 'small' |
+| number < Android 전용 >  |         |
+`

@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, Image, Dimensions, View, ScrollView } from 'react-native';
 import Markdown from 'react-native-markdown-package';
 import markdownStyle from '~/styles/markdownStyle';
+import { Linking, Modal } from "react-native";
 
 export default PageActivityIndicator = (props) => {
 	return (
@@ -19,16 +20,16 @@ export default PageActivityIndicator = (props) => {
 
 
 const text1 = `
-React Native는 앱에서 사용할 수 있도록 다양한 기본 제공 [Core Components](/docs/intro-react-native) 구성 요소를 제공합니다. 왼쪽 사이드바(또는 좁은 화면에 있는 경우 위의 메뉴)에서 모두 찾을 수 있습니다. 어디서부터 시작해야 할지 잘 모르겠으면 다음 사항을 살펴보십시오.
+React Native는 앱에서 사용할 수 있도록 다양한 기본 제공 [Core Components](https://reactnative.dev/docs/intro-react-native-components) 구성 요소를 제공합니다. 왼쪽 사이드바(또는 좁은 화면에 있는 경우 위의 메뉴)에서 모두 찾을 수 있습니다. 어디서부터 시작해야 할지 잘 모르겠으면 다음 사항을 살펴보십시오.
 
 카테고리:
 
-*   [Basic Components](/docs/components-and-apis#basic-components)
-*   [User Interface](/docs/components-and-apis#user-interface)
-*   [List Views](/docs/components-and-apis#list-views)
-*   [Android-specific](/docs/components-and-apis#android-components-and-apis)
-*   [iOS-specific](/docs/components-and-apis#ios-components-and-apis)
-*   [Others](/docs/components-and-apis#others)
+*   [Basic Components](https://reactnative.dev//docs/components-and-apis#basic-components)
+*   [User Interface](https://reactnative.dev//docs/components-and-apis#user-interface)
+*   [List Views](https://reactnative.dev//docs/components-and-apis#list-views)
+*   [Android-specific](https://reactnative.dev//docs/components-and-apis#android-components-and-apis)
+*   [iOS-specific](https://reactnative.dev//docs/components-and-apis#ios-components-and-apis)
+*   [Others](https://reactnative.dev//docs/components-and-apis#others)
 
 사용자는 React Native와 함께 번들로 제공되는 구성 요소 및 API에만 국한되지 않습니다. 리액트 네이티브에는 수천 명의 개발자들이 모여 있습니다. 특정 작업을 수행하는 라이브러리를 찾는 경우 [라이브러리 찾기에 대한 이 안내서](/docs/libraries#finding-library)를 참조하십시오.
 
