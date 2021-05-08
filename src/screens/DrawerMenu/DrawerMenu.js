@@ -54,15 +54,6 @@ const DrawerMenu = ({ navigation }) => {
           onPageButtonClick={handlePageButtonClick}
           navigation={navigation}
         />
-        <Dropdown
-          title="Example"
-          pageTitle="EXAMPLES"
-          show={visibleBox}
-          textFocus={textFocus}
-          onToggleShow={handleToggleShow}
-          onPageButtonClick={handlePageButtonClick}
-          navigation={navigation}
-        />
       </Container>
     </>
   );

@@ -16,11 +16,7 @@ const Dropdown = (props) => {
   }, [onPageButtonClick]);
 
   return (
-    <DropdownContainer style={
-      title === 'Example' &&
-      css`
-        padding-bottom: 35px;
-      `}>
+    <DropdownContainer>
       <DropdownButton onPress={handleToggleShow}>
         <DropdownButton.Text style={
           show === pageTitle &&
