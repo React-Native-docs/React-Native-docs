@@ -31,7 +31,7 @@ React Native는 앱에서 사용할 수 있도록 다양한 기본 제공 [Core 
 *   [iOS-specific](https://reactnative.dev//docs/components-and-apis#ios-components-and-apis)
 *   [Others](https://reactnative.dev//docs/components-and-apis#others)
 
-사용자는 React Native와 함께 번들로 제공되는 구성 요소 및 API에만 국한되지 않습니다. 리액트 네이티브에는 수천 명의 개발자들이 모여 있습니다. 특정 작업을 수행하는 라이브러리를 찾는 경우 [라이브러리 찾기에 대한 이 안내서](/docs/libraries#finding-library)를 참조하십시오.
+사용자는 React Native와 함께 번들로 제공되는 구성 요소 및 API에만 국한되지 않습니다. 리액트 네이티브에는 수천 명의 개발자들이 모여 있습니다. 특정 작업을 수행하는 라이브러리를 찾는 경우 [라이브러리 찾기에 대한 이 안내서](https://reactnative.dev//docs/libraries#finding-library)를 참조하십시오.
 
 ## Basic Components[#](#basic-components "Direct link to heading")
 

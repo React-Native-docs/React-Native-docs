@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, Image, Dimensions, View, ScrollView } from 'react-native';
 import Markdown from 'react-native-markdown-package';
 import markdownStyle from '~/styles/markdownStyle';
-
+import { Linking, Modal } from "react-native";
 export default PageKeyboardAvoidingView = (props) => {
 	return (
 		<ScrollView style={{ flex: 1 }}>
