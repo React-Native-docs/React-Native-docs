@@ -1,4 +1,5 @@
 import React, { useCallback } from 'react';
+import { Alert } from 'react-native';
 import { css } from '@emotion/native';
 import PAGE from '~/constants/page';
 import { DropdownContainer, DropdownButton, DropdownBox, PageButton } from './Dropdown.styles';
@@ -44,8 +45,12 @@ const Dropdown = (props) => {
                 }
                 key={name}
                 onPress={() => {
-                  handlePageButtonClick(name);
-                  navigation.navigate("Detail", { pageTitle: pageTitle, pageName:name });
+                  if (name === 'EnvironmentSetup' || name === 'Workflow' || name === 'Design' || name === 'NativeModules' || name === 'NativeComponents' || name === 'GuidesAndroid' || name === 'GuidesiOS') {
+                    Alert.alert('준비중입니다!');
+                  } else {
+                    handlePageButtonClick(name);
+                    navigation.navigate("Detail", { pageTitle: pageTitle, pageName:name });
+                  }
                 }}
                 >{name}</PageButton.Text>
             </PageButton>

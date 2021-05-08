@@ -1,5 +1,5 @@
 import React from 'react';
-import { Linking } from 'react-native';
+import { Alert, Linking } from 'react-native';
 import Header from '~/components/Header/Header';
 import { Container, MainButton, LearnButton, OriginalButton, MainBanner, ContentView, GithubView, GithubButton, BlockView, LogoText } from './Home.styles';
 import ReactMiniLogoIcon from '~/assets/icons/react-mini-logo.svg';
@@ -15,7 +15,15 @@ const Home = ({ navigation }) => {
   const [searchResult, setSearchResult] = React.useState([]);
   const ContentBlock = (props) => {
     return (
-      <BlockView onPress={() => navigation.navigate('Detail', { pageTitle: props.pageTitle, pageName: props.pageName })}>
+      <BlockView onPress={() => {
+        if (props.isUnprepared) {
+          Alert.alert(
+            "준비중입니다!"
+          );
+        } else {
+          navigation.navigate('Detail', { pageTitle: props.pageTitle, pageName: props.pageName });
+        }
+        }}>
         <BlockView.Left>
           <BlockView.Title>{props.title}</BlockView.Title>
           <BlockView.Text>
@@ -95,18 +103,21 @@ const Home = ({ navigation }) => {
                   subtitle="이 문서에는 리액트 네이티브의 기본이 되는 내용을 다루고 있으며 props와 state에 대해 학습할 수 있습니다."
                   pageTitle="RNDOCS"
                   pageName="TheBasics"
+                  isUnprepared={false}
                 />
                 <ContentBlock
                   title="Components"
                   subtitle="이 문서에는 리액트네이티브의 기본 단위인 ' 컴포넌트'에 대한 내용을 다루고 있으며 리액트의 장점인 '컴포넌트 재사용'에 대해 학습할 수 있습니다."
                   pageTitle="COMPONENTS"
                   pageName="PageActivityIndicator"
+                  isUnprepared={true}
                 />
                 <ContentBlock
                   title="API"
                   subtitle="이 문서에는 리액트네이티브를 활용하는 법에 대해 배웁니다."
                   pageTitle="RNDOCS"
                   pageName="TheBasics"
+                  isUnprepared={true}
                 />
               </ContentView>
               <GithubView>
