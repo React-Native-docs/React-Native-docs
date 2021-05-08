@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from 'react';
+import { Alert } from 'react-native';
 import { Container, MenuView } from './DrawerMenu.styles';
 import Header from '~/components/Header/Header';
 import Dropdown from '~/components/Dropdown/Dropdown';
@@ -9,7 +10,11 @@ const DrawerMenu = ({ navigation }) => {
   const [textFocus, setTextFocus] = useState(null);
   
   const handleToggleShow = useCallback((page) => {
-    setVisibleBox(visibleBox === page? null : page);
+    if (page === 'COMPONENTS' || page == 'APIS') {
+      Alert.alert('준비중입니다!');
+    } else {
+      setVisibleBox(visibleBox === page? null : page);
+    }
   }, [visibleBox]);
 
   const handlePageButtonClick = useCallback((name) => {
