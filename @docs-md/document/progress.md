@@ -12,7 +12,7 @@
   - [x] Troubleshooting
   - [x] Platform Specific Code
   - [x] More Resources
-- [ ] Environment setup (진행중)
+- [x] Environment setup
 - [ ] Workflow
 - [x] Design
   - [x] Style 
