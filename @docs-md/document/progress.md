@@ -14,12 +14,12 @@
   - [x] More Resources
 - [ ] Environment setup (진행중)
 - [ ] Workflow
-- [ ] Design (진행중)
+- [x] Design
   - [x] Style 
   - [x] Height and Width
-  - [ ] Layout with Flexbox (진행중)
-  - [ ] Images
-  - [ ] Color Reference
+  - [x] Layout with Flexbox
+  - [x] Images
+  - [x] Color Reference
 - [x] Interaction
   - [x] Handling Touches
   - [x] Navigation Between Screens
