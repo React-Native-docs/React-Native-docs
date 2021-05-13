@@ -45,7 +45,7 @@ const Dropdown = (props) => {
                 }
                 key={name}
                 onPress={() => {
-                  if (name === 'EnvironmentSetup' || name === 'Workflow' || name === 'Design' || name === 'NativeModules' || name === 'NativeComponents' || name === 'GuidesAndroid' || name === 'GuidesiOS') {
+                  if (name === 'Design' || name === 'NativeModules' || name === 'NativeComponents' || name === 'GuidesAndroid' || name === 'GuidesiOS') {
                     Alert.alert('준비중입니다!');
                   } else {
                     handlePageButtonClick(name);
