@@ -1,18 +1,19 @@
-import React from 'react';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import Home from '~/screens/Home/Home';
-import Detail from '~/screens/Detail/Detail';
-import DrawerMenu from '~/screens/DrawerMenu/DrawerMenu';
-import ModalScreen from '~/screens/ModalScreen/ModalScreen';
-import { css } from '@emotion/native';
+import React from "react";
+import { createDrawerNavigator } from "@react-navigation/drawer";
+import Home from "~/screens/Home/Home";
+import Detail from "~/screens/Detail/Detail";
+import DrawerMenu from "~/screens/DrawerMenu/DrawerMenu";
+import ModalScreen from "~/screens/ModalScreen/ModalScreen";
+import { css } from "@emotion/native";
 
 const Drawer = createDrawerNavigator();
 
 const DrawerNavigator = () => {
   return (
     <Drawer.Navigator
+      initialRouteName="Home"
       screenOptions={{ headerShown: false }}
-      drawerContent={props => <DrawerMenu {...props} />}
+      drawerContent={(props) => <DrawerMenu {...props} />}
       drawerStyle={css`
         width: 80%;
       `}
@@ -20,14 +21,17 @@ const DrawerNavigator = () => {
       <Drawer.Screen
         name="Home"
         component={Home}
+        initialParams={{ pageState: "home" }}
       />
       <Drawer.Screen
         name="Detail"
         component={Detail}
+        initialParams={{ pageState: "detail" }}
       />
       <Drawer.Screen
         name="ModalScreen"
         component={ModalScreen}
+        initialParams={{ pageState: "modal" }}
       />
     </Drawer.Navigator>
   );
