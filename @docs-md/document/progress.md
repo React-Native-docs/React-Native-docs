@@ -13,7 +13,7 @@
   - [x] Platform Specific Code
   - [x] More Resources
 - [x] Environment setup
-- [ ] Workflow
+- [x] Workflow
 - [x] Design
   - [x] Style 
   - [x] Height and Width
