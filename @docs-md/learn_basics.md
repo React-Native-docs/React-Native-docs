@@ -33,8 +33,8 @@ export default HelloWorldApp;
 
 ## What's going on here?
 
-1. First of all, we need to import `React` to be able to use `JSX`, which will then be transformed to the native components of each platform.
-2. On line 2, we import the `Text` and `View` components from `react-native`
+1. 우선 각 플랫폼의 네이티브 컴포넌트로 변환될 `JSX` 를 사용하기 위해 `React` 를 import해야합니다. 
+2. 2번째 줄에서는, `react-native`에서 `Text`와 `View` 를 import합니다. 
 
 Then we find the `HelloWorldApp` function, which is a [functional component](https://reactjs.org/docs/components-and-props.html#function-and-class-components) and behaves in the same way as in React for the web. This function returns a `View` component with some styles and a`Text` as its child.
 
