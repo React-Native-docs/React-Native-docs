@@ -43,7 +43,7 @@
 - [x] Native Modules 
 - [x] Native Components
 - [ ] Guides (Android)
-- [ ] Guides (iOS)
+- [x] Guides (iOS)
 
 
 ## Components
