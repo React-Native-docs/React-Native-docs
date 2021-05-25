@@ -54,5 +54,5 @@
 ## API
 - [ ] APIs
 
-## Learn Basics (진행중)
-- [ ] Learn The Basics
+## Learn Basics (완료)
+- [x] Learn The Basics
