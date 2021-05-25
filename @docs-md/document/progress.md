@@ -1,6 +1,6 @@
 # 번역 진행 상황
 
-## Docs
+## Docs (완료)
 
 - [x] The Basics
   - [x] Introduction
@@ -42,7 +42,7 @@
   - [x] Security (링크 추가 필요) 
 - [x] Native Modules 
 - [x] Native Components
-- [ ] Guides (Android)
+- [x] Guides (Android)
 - [x] Guides (iOS)
 
 
@@ -54,5 +54,5 @@
 ## API
 - [ ] APIs
 
-## Learn Basics
-- [ ] 진행중
+## Learn Basics (진행중)
+- [ ] Learn The Basics
