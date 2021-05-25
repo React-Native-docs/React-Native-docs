@@ -6,7 +6,7 @@ React Native는 React와 비슷하지만, 웹 컴포넌트 대신 네이티브 �
 
 ## Hello World
 
-In accordance with the ancient traditions of our people, we must first build an app that does nothing except say "Hello, world!". Here it is:
+오래된 전통에 따라 우리는 먼저 "Hello, world!"를 출력하는 것 외에는 아무것도 하지 않는 앱을 만들어야 합니다. 
 
 **Hello World**
 
@@ -29,7 +29,7 @@ const HelloWorldApp = () => {
 export default HelloWorldApp;
 ```
 
-If you are feeling curious, you can play around with sample code directly in the web simulators. You can also paste it into your `App.js` file to create a real app on your local machine.
+궁금하다면 위의 예제 코드를 클릭하여 바로 실행해볼 수 있습니다. 코드를 `App.js` 파일에 붙여넣기해서 로컬 컴퓨터에서 실제 앱을 만들어볼 수도 있습니다. 
 
 ## What's going on here?
 
@@ -50,7 +50,7 @@ First of all, ES2015 (also known as ES6) is a set of improvements to JavaScript 
 
 The other unusual thing in this code example is `<View><Text>Hello world!</Text></View>`. This is JSX - a syntax for embedding XML within JavaScript. Many frameworks use a specialized templating language which lets you embed code inside markup language. In React, this is reversed. JSX lets you write your markup language inside code. It looks like HTML on the web, except instead of web things like `<div>` or `<span>`, you use React components. In this case, `<Text>` is a [Core Component](https://reactnative.dev/docs/intro-react-native-components) that displays some text and `View` is like the `<div>` or `<span>`.
 
-## Components
+## 컴포넌트
 
 So this code is defining `HelloWorldApp`, a new `Component`. When you're building a React Native app, you'll be making new components a lot. Anything you see on the screen is some sort of component.
 
@@ -109,8 +109,6 @@ In a React component, the props are the variables that we pass from a parent com
 
 #### Are there differences between React and React Native to handle the state?
 
-**React Example using Hooks**
-
 ```jsx
 // ReactJS Counter Example using Hooks!
 
@@ -141,8 +139,6 @@ const App = () => {
 }
 
 ```
-
-**React Native example using Hooks**
 
 ```jsx
 // React Native Counter Example using Hooks!
