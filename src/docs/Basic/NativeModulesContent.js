@@ -958,12 +958,8 @@ iOS의 경우, \`RCTConvert\` 에서 지원되는 모든 인수 타입을 사용
 \`\`\`
 
 {
-
  return @{ @"DEFAULT_EVENT_NAME": @"New Event" };
-
 }
-
-Copy
 
 그런 다음 JS의 네이티브 모듈에서 다음과 같이 \`getConstants()\` 를 호출함으로써 해당 상수에 액세스할 수 있습니다. 
 
