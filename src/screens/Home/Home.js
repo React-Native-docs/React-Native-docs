@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Alert, Linking } from "react-native";
 import Header from "~/components/Header/Header";
 import {
@@ -25,10 +25,6 @@ const Home = ({ navigation, route }) => {
   const [searchValue, setSearchValue] = React.useState("");
   const [searchResult, setSearchResult] = React.useState([]);
 
-  useEffect(() => {
-    console.log(route.params.pageState);
-  }, [route]);
-
   const ContentBlock = (props) => {
     return (
       <BlockView
@@ -37,11 +33,8 @@ const Home = ({ navigation, route }) => {
             Alert.alert("준비중입니다!");
           } else {
             navigation.navigate("Detail", {
-              params: {
-                pageState: "detail",
-                pageTitle: props.pageTitle,
-                pageName: props.pageName,
-              },
+              pageTitle: props.pageTitle,
+              pageName: props.pageName,
             });
           }
         }}
@@ -77,7 +70,6 @@ const Home = ({ navigation, route }) => {
               onPress={() =>
                 navigation.navigate("Home", {
                   params: {
-                    pageState: "home",
                     pageTitle: null,
                     pageName: null,
                   },
@@ -120,11 +112,8 @@ const Home = ({ navigation, route }) => {
                 <LearnButton
                   onPress={() =>
                     navigation.navigate("Detail", {
-                      params: {
-                        pageState: "detail",
-                        pageTitle: "LEARNBASIC",
-                        pageName: "LearnBasic",
-                      },
+                      pageTitle: "LEARNBASIC",
+                      pageName: "LearnBasic",
                     })
                   }
                 >

@@ -11,14 +11,9 @@ import CancelIcon from "~/assets/icons/cancel-icon.svg";
 
 const Detail = ({ navigation, route }, i) => {
   useEffect(() => {
-    console.log(route.params.pageState);
-  }, [route]);
-
-  useEffect(() => {
     const backAction = () => {
       navigation.navigate("Home", {
         params: {
-          pageState: "home",
           pageTitle: null,
           pageName: null,
         },
@@ -47,12 +42,12 @@ const Detail = ({ navigation, route }, i) => {
     setSearch(false);
     setSearchValue("");
     setSearchResult([]);
-  }, [route.params.pageTitle, route.params.pageName]);
+  }, [route, route.params.pageTitle, route.params.pageName]);
 
   const aRef = React.useRef();
   React.useEffect(() => {
     aRef.current.scrollTo({ x: 0, y: 0, animated: true });
-  }, [route.params.pageTitle, route.params.pageName]);
+  }, [route, route.params.pageTitle, route.params.pageName]);
 
   return (
     <>
@@ -73,7 +68,6 @@ const Detail = ({ navigation, route }, i) => {
             <Header.Button
               onPress={() =>
                 navigation.navigate("Home", {
-                  pageState: "home",
                   pageTitle: null,
                   pageName: null,
                 })

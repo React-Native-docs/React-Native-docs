@@ -18,21 +18,9 @@ const DrawerNavigator = () => {
         width: 80%;
       `}
     >
-      <Drawer.Screen
-        name="Home"
-        component={Home}
-        initialParams={{ pageState: "home" }}
-      />
-      <Drawer.Screen
-        name="Detail"
-        component={Detail}
-        initialParams={{ pageState: "detail" }}
-      />
-      <Drawer.Screen
-        name="ModalScreen"
-        component={ModalScreen}
-        initialParams={{ pageState: "modal" }}
-      />
+      <Drawer.Screen name="Home" component={Home} />
+      <Drawer.Screen name="Detail" component={Detail} />
+      <Drawer.Screen name="ModalScreen" component={ModalScreen} />
     </Drawer.Navigator>
   );
 };
