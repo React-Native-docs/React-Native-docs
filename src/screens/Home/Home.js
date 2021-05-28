@@ -122,8 +122,8 @@ const Home = ({ navigation, route }) => {
                     navigation.navigate("Detail", {
                       params: {
                         pageState: "detail",
-                        pageTitle: "RNDOCS",
-                        pageName: "TheBasics",
+                        pageTitle: "LEARNBASIC",
+                        pageName: "LearnBasic",
                       },
                     })
                   }
