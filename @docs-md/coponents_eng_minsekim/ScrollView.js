@@ -725,4 +725,4 @@ Use   scrollToEnd({ animated: true })   for smooth animated scrolling,   scrollT
 
 ###   scrollWithoutAnimationTo()  [#](https://reactnative.dev/docs/scrollview#scrollwithoutanimationto)
 'scrollWithoutAnimationTo(y, x);'
-Deprecated, use scrollTo instead.
+Deprecated, use scrollTo instead.`

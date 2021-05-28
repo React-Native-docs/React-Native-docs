@@ -11,7 +11,7 @@ const DrawerMenu = ({ navigation }) => {
 
   const handleToggleShow = useCallback(
     (page) => {
-      if (page === "COMPONENTS" || page == "APIS") {
+      if (page == "APIS") {
         Alert.alert("준비중입니다!");
       } else {
         setVisibleBox(visibleBox === page ? null : page);

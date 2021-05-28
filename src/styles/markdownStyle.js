@@ -1,8 +1,8 @@
-const markdownStyle = {
+export const markdownStyle = {
     singleLineMd: {
         text: {
             color: 'blue',
-            textAlign: "right"
+            textAlign: "left"
         },
         view: {
             alignSelf: 'stretch',
@@ -10,20 +10,22 @@ const markdownStyle = {
     },
     collectiveMd: {
         heading1: {
-            color: 'red'
+            color: 'black'
         },
         heading2: {
             color: 'green',
-            textAlign: "right"
+            textAlign: "left"
         },
         strong: {
             color: 'blue'
         },
         em: {
-            color: 'cyan'
+            color: 'black',
+            fontStyle: 'normal',
         },
         text: {
             color: 'black',
+            fontSize: 12,
         },
         blockQuoteText: {
             color: 'grey'
@@ -42,8 +44,17 @@ const markdownStyle = {
             fontWeight: '500',
             backgroundColor: '#DDDDDD',
         },
+        table: {
+            borderWidth: 0,
+        },
         tableHeader: {
-            backgroundColor: 'grey',
+            backgroundColor: 'white',
+            borderColor: "black",
+            borderWidth: 1,
+        },
+        tableRow: {
+            borderBottomWidth: 0.3,
+            borderColor: '#222222',
         },
     },
 };

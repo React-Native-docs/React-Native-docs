@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Linking, Modal } from "react-native";
 import Markdown from 'react-native-markdown-package';
-import markdownStyle from '~/styles/markdownStyle';
+import {markdownStyle} from '~/styles/markdownStyle';
 import { ModalContainer, ModalView, CloseButton } from './MarkdownBlock.styles';
 import { SrcTouchable } from '~/styles/innerpageStyle';
 import CloseIcon from '~/assets/icons/close-icon.svg';

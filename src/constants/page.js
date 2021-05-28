@@ -16,6 +16,7 @@ import EnvironmentSetup from '~/docs/Basic/EnvironmentSetup';
 
 import PageButton from "~/docs/CoreComponents/Button";
 import PageCoreComponentsAndAPIs from "~/docs/CoreComponents/CoreComponentsAndAPIs";
+import PageActivityIndicator from "~/docs/CoreComponents/ActivityIndicator";
 import PageFlatList from "~/docs/CoreComponents/FlatList";
 import PageImage from "~/docs/CoreComponents/Image";
 import PageImageBackground from "~/docs/CoreComponents/ImageBackground";
@@ -53,7 +54,7 @@ const PAGE = {
     },
     COMPONENTS: {
         CoreComponentsAndAPIs: props => <PageCoreComponentsAndAPIs {...props} />,
-        ActivityIndicator: props => <PageCoreComponentsAndAPIs {...props} />,
+        ActivityIndicator: props => <PageActivityIndicator {...props} />,
         Button: props => <PageButton {...props} />,
         FlatList: props => <PageFlatList {...props} />,
         Image: props => <PageImage {...props} />,

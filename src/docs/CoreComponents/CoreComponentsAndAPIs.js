@@ -1,23 +1,26 @@
-import React from 'react';
-import { StyleSheet, Text, Image, Dimensions, View, ScrollView } from 'react-native';
-import Markdown from 'react-native-markdown-package';
-import markdownStyle from '~/styles/markdownStyle';
-import { Linking, Modal } from "react-native";
-
+import React from "react";
+import {
+  StyleSheet,
+  Text,
+  Image,
+  Dimensions,
+  View,
+  ScrollView,
+} from "react-native";
+import { OuterView, SrcTouchable } from "~/styles/innerpageStyle";
+import {
+  TextMarkdown,
+  CodeMarkdown,
+} from "~/components/Markdown/MarkdownBlock";
 export default PageActivityIndicator = (props) => {
-	return (
-		<ScrollView style={{ flex: 1 }}>
-			<Markdown
-				styles={markdownStyle.collectiveMd}
-				onLink={(url) => Linking.openURL(url)}
-			>
-				{text1}
-			</Markdown>
-		</ScrollView>
-	)
-}
-
-
+  return (
+    <ScrollView contentInsetAdjustmentBehavior="automatic">
+      <OuterView>
+        <TextMarkdown source={text1} />
+      </OuterView>
+    </ScrollView>
+  );
+};
 
 const text1 = `
 React Native는 앱에서 사용할 수 있도록 다양한 기본 제공 [Core Components](https://reactnative.dev/docs/intro-react-native-components) 구성 요소를 제공합니다. 왼쪽 사이드바(또는 좁은 화면에 있는 경우 위의 메뉴)에서 모두 찾을 수 있습니다. 어디서부터 시작해야 할지 잘 모르겠으면 다음 사항을 살펴보십시오.
@@ -161,4 +164,4 @@ iOS 작업 시트 또는 공유 시트를 표시하는 API입니다.
 
 최상단의 앱 상태 표시줄을 제어하는 구성 요소입니다.(배터리, 와이파이 있는 부분)
 
-`
+`;

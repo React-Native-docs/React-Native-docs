@@ -130,13 +130,21 @@ React Native를 사용하면 앱의 고유한 요구에 맞게 [Android](https:/
 ## Core Components
 React Native에는 form 컨트롤에서부터 activity indicator까지 모든 것을 다루는, 많은 코어 컴포넌트가 있습니다. [API section](https://reactnative.dev/docs/components-and-apis)에 모두 문서화되어 있습니다. 주로 다음 코어 컴포넌트들로 작업합니다.
 
-| UI Component | Android View |    iOS View    |         Web Analog          |                         Description                          |
-| :----------: | :----------: | :------------: | :-------------------------: | :----------------------------------------------------------: |
-|    \`<View>\`    | \`<ViewGroup>\`  |    \`<UIView>\`    | \`<div>\`<br />A non-scrollling | 레이아웃 (flexbox), 스타일, 일부 터치 처리 및 접근성 제어를 지원하는 컨테이너 |
-|    \`<Text>\`    |  \`<TextView>\`  |  \`<UITextView>\`  |             \`<p>\`             | 디스플레이, 스타일, 텍스트의 문자열을 표시하고 터치 이벤트도 다룸 |
-|   \`<Image>\`    | \`<ImageView>\`  | \`<UIImageView>\`  |            \`<img>\`            |                다양한 유형의 이미지를 표시함                 |
-| \`<ScrollView>\` | \`<ScrollView>\` | \`<UIScrollView>\` |            \`<div>\`            |  여러 컴포넌트 및 뷰를 포함할 수 있는 일반 스크롤 컨테이너   |
-| \`<TextInput>\`  |  \`<EditText>\`  | \`<UITextField>\`  |     \`<input type="text">\`     |               사용자가 텍스트를 입력할 수 있음               |
+| RN컴포넌트                                                 | ANDROID        | IOS              | 웹                  |
+| :----------------------------------------------------------- | :------------- | :--------------- | :------------------ |
+| <View>                                                       | <ViewGroup>    | <UIView>         | <div>               |
+| 레이아웃 (flexbox), 스타일, 일부 터치 처리 및 접근성 제어를 지원하는 컨테이너 |               |                  |                     |
+| <Text>                                                       | <TextView>     | <UITextView>   | <p>                   |
+| 디스플레이, 스타일, 텍스트의 문자열을 표시하고 터치 이벤트도 다룸            |                |                  |                     |
+| <Image>                                                      | <ImageView>    | <UIImageView>  | <img>                 |
+| 다양한 유형의 이미지를 표시함                                       |                |                  |                     |
+| <ScrollView>                                                 | <ScrollView>   | <UIScrollView> | <div>                 |
+| 여러 컴포넌트 및 뷰를 포함할 수 있는 일반 스크롤 컨테이너                 |                |                  |                     |
+| <TextInput>                                                  | <EditText>     | <UITextField>    | <input type="text"> |
+| 사용자가 텍스트를 입력할 수 있음                                     |                |                  |                     |
+
+
+
 
 
 다음 섹션에서는 React의 작동 방식을 배우기 위해 이러한 코어 컴포넌트들을 조합하게 됩니다. 지금 아래에서 실행해보세요!
