@@ -85,7 +85,7 @@ Wi-Fi를 통해 개발 서버에 연결할 수도 있습니다. 먼저 USB 케�
 ## 배포를 위해 앱 빌드하기
 
 React Native를 사용해 멋진 앱을 만들었습니다. 이제 Play Store에서 이 앱을 릴리즈해봅시다. 이 과정은 다른 모든 네이티브 Android 앱과 동일하며, 몇 가지 추가적인 고려사항이 있습니다. 자세한 내용은 [signed APK 생성하기](https://reactnative.dev/docs/signed-apk-android)를 참고하십시오. 
-`
+`;
 
 export const text1_1_2 = `
 <-- Android/Windows -->
@@ -174,7 +174,7 @@ Wi-Fi를 통해 개발 서버에 연결할 수도 있습니다. 먼저 USB 케�
 ## 배포를 위해 앱 빌드하기
 
 React Native를 사용해 멋진 앱을 만들었습니다. 이제 Play Store에서 이 앱을 릴리즈해봅시다. 이 과정은 다른 모든 네이티브 Android 앱과 동일하며, 몇 가지 추가적인 고려사항이 있습니다. 자세한 내용은 [signed APK 생성하기](https://reactnative.dev/docs/signed-apk-android)를 참고하십시오. 
-`
+`;
 
 export const text1_1_3 = `
 <-- Android/Linux -->
@@ -300,7 +300,7 @@ Wi-Fi를 통해 개발 서버에 연결할 수도 있습니다. 먼저 USB 케�
 ## 배포를 위해 앱 빌드하기
 
 React Native를 사용해 멋진 앱을 만들었습니다. 이제 Play Store에서 이 앱을 릴리즈해봅시다. 이 과정은 다른 모든 네이티브 Android 앱과 동일하며, 몇 가지 추가적인 고려사항이 있습니다. 자세한 내용은 [signed APK 생성하기](https://reactnative.dev/docs/signed-apk-android)를 참고하십시오. 
-`
+`;
 
 export const text1_2 = `
 <-- iOS/macOS -->
@@ -374,7 +374,7 @@ XCode Project Navigator에서 프로젝트를 선택한 다음 메인 타겟을 
 React Native를 사용해 멋진 앱을 만들었습니다. 이제 App Store에서 이 앱을 릴리즈해봅시다. 이 과정은 다른 모든 네이티브 iOS 앱과 동일하며, 몇 가지 추가적인 고려사항이 있습니다.
 
 Follow the guide for [publishing to the Apple App Store](https://reactnative.dev/docs/publishing-to-app-store) to learn more.
-`
+`;
 
 export const text2 = `
 # Fast Refresh (빠른 새로고침)
@@ -421,7 +421,7 @@ Fast Refresh는 편집 사이에 컴포넌트의 state를 가능하면 유지하
 예를 들어  \`useMemo(() => x * 2, [x])\` 를  \`useMemo(() => x * 10, [x])\` 로 수정하는 경우, \`x\` (종속성)가 바뀌지 않았다고 하더라도 다시 실행됩니다. React에서 그렇게 하지 않으면 수정사항이 화면에 반영되지 않기 때문입니다. 
 
 때로는 이것이 예상치 못한 결과로 이어질 수 있습니다. 예를 들어 종속성 배열이 비어 있는 \`useEffect\` 도 Fast Refresh 중에 한 번 다시 실행됩니다. 그러나, Fast Refresh 없이도 \`useEffect\` 를 가끔씩 다시 실행할 때 복원력이 있는 코드를 작성하는 것은 좋은 습관입니다. 나중에 새로운 종속성을 더 쉽게 도입할 수 있게 해주기 때문입니다. 
-`
+`;
 
 export const text3 = `
 # 디버깅
@@ -614,7 +614,7 @@ USB를 통해 연결된 Android 5.0 이상의 기기에서는, \`adb\` 커맨드
 ## 네이티브 코드 디버깅하기
 
 네이티브 모듈 작성 등 네이티브 코드 작업 시, 안드로이드 스튜디오나 XCode에서 앱을 시작하고, 표준 네이티브 앱을 구축할 때와 마찬가지로 네이티브 디버깅 기능(중단점 설정 등)을 활용할 수 있다. 
-`
+`;
 
 export const text4 = `
 # 스택 추적 디버깅 심볼 생성하기 (Symbolicating a stack trace)
@@ -653,7 +653,7 @@ adb logcat -d | npx metro-symbolicate android/app/build/generated/sourcemaps/rea
 - 빌드 프로세스에 의해 여러 소스 맵이 생성될 수 있습니다. 예제에서 보여주는 위치에 있는 것을 사용해야 합니다. 
 - 사용하는 소스맵이 충돌을 일으킨 앱의 정확한 커밋과 일치하는지 확인해야 합니다. 소스 코드에서의 사소한 변경으로 인해 오프셋에 큰 차이가 발생할 수 있습니다. 
 - \`metro-symbolicate\` 가 성공적으로 즉시 종료되는 경우, 입력은 터미널이 아니라 파이프나 리다이렉션에서 와야 합니다. 
-`
+`;
 
 export const text5 = `
 # 테스트
@@ -662,7 +662,7 @@ export const text5 = `
 
 이 가이드에서는 정적 분석에서부터 엔드 투 엔드 테스트까지, 앱이 예상대로 작동되는지 확인할 수 있는 여러 가지 자동화된 방식들을 다룹니다. 
 
-![Testing is a cycle of fixing, testing, and either passing to release or failing back into testing.](https://reactnative.dev/docs/assets/diagram_testing.svg)
+![Testing is a cycle of fixing, testing, and either passing to release or failing back into testing.](https://user-images.githubusercontent.com/52448114/120095656-05037300-c162-11eb-89f6-2f3e8a2caa91.png)
 
 ## 테스트를 해야 하는 이유
 
@@ -736,7 +736,7 @@ When the object being tested has any dependencies, you’ll often need to mock t
 
 단위 테스트의 장점은, 빠르게 작성하고 실행할 수 있다는 점입니다. 따라서 작업을 하면서 테스트가 통과되고 있는지에 대한 피드백을 빠르게 받을 수 있습니다. Jest에는 편집 중인 코드와 관련된 테스트를 지속적으로 실행할 수 있는 옵션도 있습니다. 
 
-![ ](https://reactnative.dev/docs/assets/p_tests-unit.svg)
+![ ](https://user-images.githubusercontent.com/52448114/120095688-3aa85c00-c162-11eb-9030-6341da278945.png)
 
 ### 모킹 (Mocking)
 
@@ -767,7 +767,7 @@ When the object being tested has any dependencies, you’ll often need to mock t
 > - 다른 애플리케이션 (기상 서비스 API 등)에 대한 네트워크 호출을 하는 경우
 > - 모든 종류의 파일 또는 데이터베이스 입출력(I/O)를 실행하는 경우
 
-![ ](https://reactnative.dev/docs/assets/p_tests-integration.svg)
+![ ](https://user-images.githubusercontent.com/52448114/120095690-3c721f80-c162-11eb-883e-cb26722e289d.png)
 
 ## 컴포넌트 테스트
 
@@ -788,7 +788,7 @@ React 컴포넌트를 테스트 하는 경우, 다음 두 가지를 테스트할
 
 > 컴포넌트 테스트는 Node.js 환경에서 실행되는 JavaScript 테스트에 불과합니다. 컴포넌트 테스트는 React Native 컴포넌트를 지원하는 iOS, Android 또는 다른 플랫폼 코드를 고려하지 않습니다. 따라서 모든 것이 사용자 입장에서 잘 작동할 것이라고 100% 확신할 수는 없습니다. iOS 또는 Android 코드에 버그가 있다면, 컴포넌트 테스트로는 이를 찾을 수 없을 것입니다. 
 
-![ ](https://reactnative.dev/docs/assets/p_tests-component.svg)
+![ ](https://user-images.githubusercontent.com/52448114/120095692-3da34c80-c162-11eb-9243-ba0ff29a5880.png)
 
 ### 사용자 상호작용 테스트
 
@@ -889,7 +889,7 @@ test('given empty GroceryShoppingList, user can add an item to it', () => {
 
 작은 스냅샷만 사용하기를 권장합니다 ([no-large-snapshots rule](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-large-snapshots.md) 참고). 두 개의 React 컴포넌트 state 간의 변경 사항을 테스트하고 싶다면, [snapshot-diff](https://github.com/jest-community/snapshot-diff) 를 사용하십시오. 이러한 툴에 의구심이 든다면 이전 단락에서 설명한 명시적 기대를 사용하는 것도 좋습니다. 
 
-![ ](https://reactnative.dev/docs/assets/p_tests-snapshot.svg)
+![ ](https://user-images.githubusercontent.com/52448114/120095698-44ca5a80-c162-11eb-8939-97ca9a9c6f11.png)
 
 ## 엔드 투 엔드 테스트 (End-to-End Tests)
 
@@ -909,7 +909,7 @@ E2E 테스트로 인증 흐름, 핵심 기능, 결제 등 앱의 중요한 부�
 
 사용 가능한 E2E 테스트 도구가 몇 가지 있습니다. React Native 커뮤니티에서, [Detox](https://github.com/wix/detox/)는 React Native 앱에 적합하기 때문에 널리 사용되는 프레임워크입니다. iOS 및 Android 앱 영역에서 또 다른 인기 있는 라이브러리는 [Appium](http://appium.io/)입니다. 
 
-![ ](https://reactnative.dev/docs/assets/p_tests-e2e.svg)
+![ ](https://user-images.githubusercontent.com/52448114/120095699-45fb8780-c162-11eb-9fb2-ab2b17d041e4.png)
 
 ## 요약
 
@@ -922,7 +922,7 @@ E2E 테스트로 인증 흐름, 핵심 기능, 결제 등 앱의 중요한 부�
 - [Jest 문서](https://jestjs.io/docs/en/tutorial-react-native)
 - [Detox](https://github.com/wix/detox/)
 - [Appium](
-`
+`;
 
 export const text6 = `
 # 라이브러리 사용하기
@@ -1004,7 +1004,7 @@ Expo에서 제작된 라이브러리는 모두 TypeScript로 작성되었으며,
 ### 앱의 React Native 버전과 호환되는가?
 
 라이브러리의 최신 버전은 일반적으로 React Native의 최신 버전과 호환됩니다. 이전 버전을 사용하는 경우, README를 참고해 어떤 버전의 라이브러리를 설치해야하는지 확인해야 합니다. \`npm install <library-name>@<version-number>\` 를 실행해 라이브러리의 특정 버전을 설치할 수 있습니다. 예: \`npm install @react-native-community/netinfo@^2.0.0\`. 
-`
+`;
 
 export const text7 = `
 # TypeScript 사용하기
@@ -1252,7 +1252,7 @@ TypeScript와 함께 사용자 정의 경로 alias를 사용하려면, Babel 및
 \`\`\`
 
 
-`
+`;
 
 export const text8 = `
 # 새로운 버전으로 업그레이드하기
@@ -1379,4 +1379,4 @@ git commit -m "Upgrade react-native" # Save the current files in a commit
 #### 모든 변경 사항을 수행했지만 앱이 여전히 이전 버전을 사용하고 있습니다
 
 이러한 오류는 일반적으로 캐싱과 관련이 있으므로,  [react-native-clean-project](https://github.com/pmadruga/react-native-clean-project) 를 설치해 프로젝트의 모든 캐시를 지운 다음 다시 실행하는 것을 권장합니다. 
-`
+`;
