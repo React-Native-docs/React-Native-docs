@@ -81,7 +81,7 @@ ES8
 Specific
 
 - \`__DEV__\`
-`
+`;
 
 export const text2_1 = `
 # 타이머
@@ -131,7 +131,7 @@ InteractionManager.clearInteractionHandle(handle);
 // queued tasks run if all handles were cleared
 \`\`\`
 
-`
+`;
 
 export const text3_1 = `
 # Hermes 사용하기
@@ -216,14 +216,14 @@ Metro 서버의 수신 위치를 알았다면, 다음 단계에 따라 크롬과
 1. 크롬 브라우저 인스턴스의 \`chrome://inspect\` 로 이동합니다. 
 2. \`Configure...\` 버튼을 사용해 Metro 서버 주소 (일반적으로 위에서 설명한 대로 \`localhost:8081\`) 를 추가합니다. 
 
-\t![https://media.vlpt.us/images/leejiwonn/post/cd9e0cf3-1c88-49e0-8fee-67613a660243/image.png](https://media.vlpt.us/images/leejiwonn/post/cd9e0cf3-1c88-49e0-8fee-67613a660243/image.png)
+![https://media.vlpt.us/images/leejiwonn/post/cd9e0cf3-1c88-49e0-8fee-67613a660243/image.png](https://media.vlpt.us/images/leejiwonn/post/cd9e0cf3-1c88-49e0-8fee-67613a660243/image.png)
 
 3. 이제 디버거를 불러오는 데 사용할 수 있는 "검사(inspect)" 링크가 있는 "Hermes React Native" 타겟이 표시됩니다. "검사(inspect)" 링크가 표시되지 않으면 Metro 서버가 실행 중인지 확인하세요. 
 
-    ![https://media.vlpt.us/images/leejiwonn/post/6393618b-aba6-4998-b514-eabe22c9c278/image.png](https://media.vlpt.us/images/leejiwonn/post/6393618b-aba6-4998-b514-eabe22c9c278/image.png)
+![https://media.vlpt.us/images/leejiwonn/post/6393618b-aba6-4998-b514-eabe22c9c278/image.png](https://media.vlpt.us/images/leejiwonn/post/6393618b-aba6-4998-b514-eabe22c9c278/image.png)
 
 4. 이제 크롬 디버깅 도구를 사용할 수 있습니다. 예를 들어, 다음에 JavaScript를 실행할 때 중단점(breakpoint)을 설정하려면, 일시 중지 버튼을 클릭하고 JavaScript를 실행시킬 앱의 작업을 발생시키면 됩니다. 
 
-    ![https://media.vlpt.us/images/leejiwonn/post/26b7b6db-949f-4a3d-b767-b2e38dec1546/image.png](https://media.vlpt.us/images/leejiwonn/post/26b7b6db-949f-4a3d-b767-b2e38dec1546/image.png)
+![https://media.vlpt.us/images/leejiwonn/post/26b7b6db-949f-4a3d-b767-b2e38dec1546/image.png](https://media.vlpt.us/images/leejiwonn/post/26b7b6db-949f-4a3d-b767-b2e38dec1546/image.png)
 
-`
+`;
