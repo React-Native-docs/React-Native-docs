@@ -220,14 +220,14 @@ The following options are currently not working with \`fetch\`
 - 쿠기 기반 인증은 현재 불안정합니다. [https://github.com/facebook/react-native/issues/23185](https://github.com/facebook/react-native/issues/23185) 에서 일부 이슈를 확인할 수 있습니다. 
 
 - 적어도 iOS에서는, 302를 통해 리다이렉션할 때 \`Set-Cookie\` 헤더가 보인다면 해당 쿠키는 제대로 설정되어 있지 않은 것입니다. 리다이렉션이 수동으로 처리될 수 없기 때문에, 만료된 세션인 경우 무한 요청이 발생할 수 있습니다.
-`
+`;
 
 export const text2_1 = `
 # 보안
 
 앱을 빌드할 때 보안이 간과되는 경우가 많습니다. 완전히 뚫을 수 없는 소프트웨어를 구축하는 것은 불가능한 것이 사실입니다. (완전히 뚫을 수 없는 자물쇠는 아직 발명되지 않았습니다. 은행 금고에도 여전히 침입이 가능합니다.) 그러나, 악의적인 공격의 피해자가 되거나 보안 취약성에 노출 될 가능성은, 그러한 상황에서 애플리케이션을 보호하기 위해 투입하는 노력에 반비례합니다. 평범한 자물쇠도 풀 수는 있지만, 캐비닛 고리만큼 빨리 풀기는 어렵습니다. 
 
-![https://reactnative.dev/docs/assets/d_security_chart.svg](https://reactnative.dev/docs/assets/d_security_chart.svg)
+![01_d_security_chart](https://user-images.githubusercontent.com/52448114/120096425-64fc1880-c166-11eb-85eb-b3bb93c26128.png)
 
 이 가이드에서는 민감한 정보를 저장하는 것, 인증, 네트워크 보안, 그리고 앱을 안전하게 하는 데 도움이 되는 도구들에 대해 알아볼 것입니다. 이는 비행 전 체크리스트가 아니라, 앱과 유저를 더 안전하게 보호하는 데 도움이 되는 옵션 카탈로그이입니다. 
 
@@ -279,7 +279,7 @@ iOS 키체인 서비스나 안드로이드 보안 공유환경설정을 사용�
 
 ## 인증 및 Deep Linking[#](https://reactnative.dev/docs/security#authentication-and-deep-linking)
 
-![https://reactnative.dev/docs/assets/d_security_deep-linking.svg](https://reactnative.dev/docs/assets/d_security_deep-linking.svg)
+![02_d_security_deep-linking](https://user-images.githubusercontent.com/52448114/120096427-662d4580-c166-11eb-897a-d4c69f868362.png)
 
 모바일 앱에는 웹에는 존재하지 않는 취약점인 "딥 링크"가 존재합니다. 딥 링크는 외부 소스에서 네이티브 어플리케이션으로 데이터를 직접 보내는 방식입니다. 앱 스키마가 \`app\`이고, \`//\` 뒤에 오는 것들이 요청을 처리하는 데에 내부적으로 사용될 수 있는 경우, 딥 링크는 \`app://\` 형태입니다. 
 
@@ -321,7 +321,7 @@ Native OAuth에서 사용해볼만한 라이브러리는 react-native-app-auth�
 
 > React-native-app-auth는 ID 공급자가 지원하는 경우에만 PKCE를 지원할 수 있습니다. 
 
-![https://reactnative.dev/assets/images/diagram_pkce-e0b4a829176ac05d07b0bcec73994985.svg](https://reactnative.dev/assets/images/diagram_pkce-e0b4a829176ac05d07b0bcec73994985.svg)
+![03_diagram_pkce-e0b4a829176ac05d07b0bcec73994985](https://user-images.githubusercontent.com/52448114/120096430-675e7280-c166-11eb-9e50-b6af2a53855e.png)
 
 ## 네트워크 보안[#](https://reactnative.dev/docs/security#network-security)
 
@@ -339,4 +339,4 @@ https 엔드포인트를 사용하더라도 여전히 데이터가 가로채기�
 
 보안을 처리할 수 있는 완벽한 방법은 없지만, 의식적인 노력과 부지런함으로 어플리케이션의 보안 침해 가능성을 크게 줄일 수 있습니다. 어플리케이션에 저장된 데이터의 민감성, 사용자 수, 해커가 계정에 접근할 때 발생할 수 있는 피해에 비례하게 보안에 투자해야합니다. 그리고 처음부터 요청된 적 없는 정보에 접근하는 것이 훨씬 더 어렵다는 것을 명심하세요. 
 
-`
+`;
