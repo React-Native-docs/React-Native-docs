@@ -92,7 +92,7 @@ handleOnPress() {
 이에 대한 한 가지 해결책은 Javascript 기반 애니메이션을 메인 스레드로 오프로드 할 수 있게 하는 것입니다. 위와 동일한 작업을 이 접근 방식으로 수행한다면, 전환을 시작할 때 새로운 씬에 대한 모든 x-offset 리스트를 계산하여 이를 메인 스레드로 보내 최적화 된 방식으로 실행할 수 있습니다. 이제 JavaScript 스레드는 이러한 책임에서 벗어났기 때문에, 씬을 렌더링하는 동안 프레임을 몇 개 떨어뜨려도 큰 문제가 되지 않습니다. 예쁜 화면 전환에 정신이 팔려 아마 눈치채지도 못할 것입니다. 
 
 이를 해결하는 것은 새로운 [React Navigation](https://reactnative.dev/docs/navigation) 라이브러리의 주요 목표 중 하나입니다. React Navigation의 뷰는 네이티브 컴포넌트와 [\`Animated\`](https://reactnative.dev/docs/animated) 라이브러리를 사용하여 메인 스레드에서 실행되는 60 FPS 애니메이션을 제공합니다. 
-`
+`;
 
 export const text2_1 = `
 # Flatlist 최적화 설정
@@ -222,8 +222,7 @@ render(){
     // ...
 }
 \`\`\`
-`
-
+`;
 
 export const text3_1 = `
 # RAM Bundles and Inline Requires
@@ -402,7 +401,7 @@ module.exports = config;
 ## 개선 사항 테스트 및 측정 (Test and Measure Improvements)
 이제 RAM 형식과 인라인 요구 사항을 사용하여 앱을 빌드할 준비가 되었습니다. 시작 전과 후의 시간을 측정해봅시다. 
 
-`
+`;
 
 export const text4_1 = `
 # 프로파일링
@@ -453,7 +452,7 @@ trace.html 파일이 올바르게 열리지 않으면 브라우저 콘솔에서 
 > VSync 강조 표시 사용하기
 > 
 > 16ms 프레임 경계를 강조 표시하려면 화면 오른쪽 상단에 있는 이 확인란을 선택해야 합니다.
-> ![](https://images.velog.io/images/leejiwonn/post/961b83a9-051c-4707-8d97-e22c826abe1b/image.png)
+> ![](data:image/png;base64,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)
 >
 > 위의 스크린샷과 같이 얼룩말 줄무늬를 볼 수 있습니다. 그렇지 않은 경우 다른 장치에서 프로파일링을 시도해보세요. 삼성은 vsyn를 표시하는 데 문제가 있는 것으로 알려져 있지만, Nexus 시리즈는 대체로 신뢰성이 높습니다. 
 
@@ -527,8 +526,7 @@ JS 스레드에 잠시 머무른 다음, 네이티브 모듈 스레드에서 일
 
 상호 작용이 끝날 때까지 새로운 UI 생성을 지연시키거나, 생성 중인 UI를 단순화할 수 있는 것이 아니라면, 이러한 문제를 완화할 수 있는 빠른 해결책은 없습니다. React Native 팀은 이를 위해 새로운 UI를 생성하고 메인 스레드에서 벗어나 구성함으로써 상호 작용이 원활하게 진행될 수 있도록 하는 인프라 수준의 솔루션을 개발하고 있습니다. 
 
-`
-
+`;
 
 export const text5_1 = `
 # Hermes로 프로파일링하기
@@ -676,4 +674,4 @@ export interface HermesStackFrame {
 
 \`hermes-profile-transformer\`는 Hermes를 사용해 생성된 모든 프로파일을 크롬 개발자 도구에 직접 표시할 수 있는 형식으로 변환할 수 있습니다. 이에 대한 자세한 내용은  [\`@react-native-community/hermes-profile-transformer\`](https://github.com/react-native-community/hermes-profile-transformer)에서 확인할 수 있습니다. 
 
-`
+`;
