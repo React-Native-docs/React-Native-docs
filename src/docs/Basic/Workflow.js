@@ -7,7 +7,7 @@ import {
   View,
   ScrollView,
 } from "react-native";
-import { SvgUri } from "react-native-svg";
+import { SvgUri, SvgCssUri } from "react-native-svg";
 import { OuterView, SrcTouchable } from "~/styles/innerpageStyle";
 import {
   TextMarkdown,
