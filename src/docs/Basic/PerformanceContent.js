@@ -452,8 +452,9 @@ trace.html 파일이 올바르게 열리지 않으면 브라우저 콘솔에서 
 > VSync 강조 표시 사용하기
 >   
 > 16ms 프레임 경계를 강조 표시하려면 화면 오른쪽 상단에 있는 이 확인란을 선택해야 합니다.
-> ![profiling01](https://user-images.githubusercontent.com/52448114/120096971-2320a180-c169-11eb-9c76-9545a77e475f.png)
->
+
+![profiling01](https://user-images.githubusercontent.com/52448114/120096971-2320a180-c169-11eb-9c76-9545a77e475f.png)
+
 > 위의 스크린샷과 같이 얼룩말 줄무늬를 볼 수 있습니다. 그렇지 않은 경우 다른 장치에서 프로파일링을 시도해보세요. 삼성은 vsyn를 표시하는 데 문제가 있는 것으로 알려져 있지만, Nexus 시리즈는 대체로 신뢰성이 높습니다. 
 
 ### 3. 프로세스 찾기 (Find your process)
@@ -462,20 +463,25 @@ trace.html 파일이 올바르게 열리지 않으면 브라우저 콘솔에서 
 왼쪽에는, 우측 타임라인 행에 해당하는 스레드 집합이 표시됩니다. 이 용도로 사용되는 몇 가지 스레드가 있습니다. UI 스레드(패키지 이름 또는 이름 UI 스레드), \`mqt_js\`, \`mqt_native_modules\`입니다. Android 5+에서 실행 중인 경우 \`Render Thread\` 도 중요합니다. 
 
 - **UI 스레드** : 표준 안드로이드 측정/레이아웃/그림이 발하는 곳입니다. 오른쪽의 스레드 이름은 패키지 이름 (예: book.adsmanager) 또는 UI 스레드입니다. 이 스레드에서 볼 수 있는 이벤트는 아래와 같이 보여야 하며, \`Choreographer\`, \`traversals\`, \`DispatchUI\`와 관련이 있습니다. 
+
 ![profiling02](https://user-images.githubusercontent.com/52448114/120096972-2451ce80-c169-11eb-96f3-372f856b83be.png)
 
 - **JS 스레드** : 여기에서 자바스크립드가 실행됩니다. 스레드 이름은 \`mqt_js\` 또는 \`<...>\` 장치의 커널이 얼마나 협조적인지에 따라 달라집니다. 이름이 없는 경우 식별하려면 \`JSCall\`, \`Bridge.executeJSCall\` 등의 항목을 찾아보아야 합니다.
+
 ![profiling03](https://user-images.githubusercontent.com/52448114/120096974-2582fb80-c169-11eb-91f3-fdba627e5595.png)
 
 - **네이티브 모듈 스레드** : 여기에서 기본 모듈 호출(예: UIManager)이 실행됩니다. 스레드 이름은 \`mqt_native_modules\` 또는 \`<...>\` 입니다. 후자의 경우 이를 식별하기 위해 \`Native Call\`, \`callJavaModuleMethod\`, \`onBatchCompelete\` 와 같은 항목을 찾아보아야 합니다. 
+
 ![profiling04](https://user-images.githubusercontent.com/52448114/120097058-7a267680-c169-11eb-9c99-6bfbbea2c92d.png)
 
 - **보너스: 렌더 스레드** : Android L(5.0) 이상의 버전을 사용하는 경우 애플리케이션에도 렌더 스레드가 존재합니다. 이 스레드는 UI를 그리는 데 사용되는 실제 OpenGL 명령을 생성합니다. 스레드 이름은 \`RenderThread\` 또는 \`<...>\` 임. 후자의 경우 \`DrawFrame\`, \`queueBuffer\` 같은 항목을 찾아보아야 함.
+
 ![profiling05](https://user-images.githubusercontent.com/52448114/120097085-99250880-c169-11eb-9982-e00d32bf7761.png)
     
 ## 문제를 일으키는 요소 확인하기 (Identifying a culprit)
 
 애니메이션이 매끄럽게 동작하려면, 다음과 같아야 합니다. 
+
 ![](https://images.velog.io/images/leejiwonn/post/c500230f-5cb0-4c30-bd43-ccb02c792920/image.png)
 
 각 색상의 변화는 하나의 프레임입니다. 프레임을 표시하려면, 16ms 안에 모든 UI 작업이 완료되어야 합니다. 프레임 경계 가까이에서는 어떠한 스레드도 작동하지 않습니다. 이와 같은 애플리케이션 렌더링은 60FPS로 진행됩니다. 
@@ -608,6 +614,7 @@ npx react-native run-android
 1. 크롬 개발자 도구를 실행하세요. 
 2. **성능** 탭을 선택하세요. 
 3. 마우스 오른쪽 클릭 후 **프로파일 로드하기...**를 선택하세요.
+
 ![Loading a performance profile on Chrome DevTools](https://reactnative.dev/docs/assets/openChromeProfile.png)
 
 ## Hermes 프로파일 변환기의 작동 방식[#](https://reactnative.dev/docs/profile-hermes#how-does-the-hermes-profile-transformer-work)
