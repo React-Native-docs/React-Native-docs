@@ -6,15 +6,22 @@
     "orientation": "portrait",
     "packagerOpts": {
       "config": "metro.config.js",
-      "sourceExts": ["js", "jsx", "svg"],
+      "sourceExts": [
+        "js",
+        "jsx",
+        "svg"
+      ],
       "transformer": "node_modules/react-native-svg-transformer/index.js"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hyuna.rnproject"
     },
     "android": {
       "package": "com.hyuna.rnproject"
