@@ -150,6 +150,17 @@ page/docs => 공식문서 예제
 
 ```
 
-# 결과(미리보기)
+# 결과(미리보기) 구글 플레이 스토어
 
 https://play.google.com/store/apps/details?id=com.hyuna.rnproject
+
+# 결과(미리보기) iOS 앱 스토어
+
+https://fnd.io/#/kr/ios-universal-app/1570059041-rndoc-by-minsung-kim
+
+![2048x2732bb](https://user-images.githubusercontent.com/23623248/122731082-e5212400-d2b5-11eb-82cf-b7e4e240220b.png)
+![1242x2688bb (1)](https://user-images.githubusercontent.com/23623248/122731150-f4a06d00-d2b5-11eb-98b2-f23a0cfec6cd.png)
+![1242x2688bb](https://user-images.githubusercontent.com/23623248/122731041-daff2580-d2b5-11eb-970a-b76d7550c73f.png)
+![1242x2688bb (4)](https://user-images.githubusercontent.com/23623248/122731061-e05c7000-d2b5-11eb-872c-f59bbe09afa5.png)
+![1242x2688bb (3)](https://user-images.githubusercontent.com/23623248/122731065-e18d9d00-d2b5-11eb-8997-3cdfe5788fba.png)
+![1242x2688bb (2)](https://user-images.githubusercontent.com/23623248/122731069-e2beca00-d2b5-11eb-9f23-0167ad067f63.png)
