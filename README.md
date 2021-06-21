@@ -152,4 +152,4 @@ page/docs => 공식문서 예제
 
 # 결과(미리보기)
 
-<img src="https://github.com/Mins97/rndoc2/blob/main/readmeImg/KakaoTalk_20210224_062030248.jpg?raw=true" width="300" height="700"/><img src="https://github.com/Mins97/rndoc2/blob/main/readmeImg/KakaoTalk_20210224_062030248_01.jpg?raw=true" width="300" height="700"/><img src="https://github.com/Mins97/rndoc2/blob/main/readmeImg/KakaoTalk_20210224_062030248_02.jpg?raw=true" width="300" height="700"/><img src="https://github.com/Mins97/rndoc2/blob/main/readmeImg/KakaoTalk_20210224_062030248_03.jpg?raw=true" width="300" height="700"/><img src="https://github.com/Mins97/rndoc2/blob/main/readmeImg/KakaoTalk_20210224_062030248_04.jpg?raw=true" width="300" height="700"/><img src="https://github.com/Mins97/rndoc2/blob/main/readmeImg/KakaoTalk_20210224_062030248_05.jpg?raw=true" width="300" height="700"/>
+https://play.google.com/store/apps/details?id=com.hyuna.rnproject
