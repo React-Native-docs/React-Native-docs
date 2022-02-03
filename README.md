@@ -1,39 +1,18 @@
 # React-Native-docs
-React-Native-docs 요약 &amp; 번역 &amp; 예제구현
 
-# 결과(미리보기) 구글 플레이 스토어
+리액트 네이티브 (React Native) 공식문서를 번역하며 학습하는 스터디에서 출발한 프로젝트입니다. 리액트 네이티브 (React Native) 공식문서를 학습하고자 하는 초심자에게 번역 내용과 바로 실행해볼 수 있는 예제를 제공한다면 도움이 되지 않을까 하는 고민에서 시작하였습니다.
 
-https://play.google.com/store/apps/details?id=com.hyuna.rnproject
+[구글 플레이 스토어 다운로드](https://play.google.com/store/apps/details?id=com.hyuna.rnproject)
 
-# 결과(미리보기) iOS 앱 스토어
+[iOS 앱 스토어 다운로드](https://fnd.io/#/kr/ios-universal-app/1570059041-rndoc-by-minsung-kim)
 
-https://fnd.io/#/kr/ios-universal-app/1570059041-rndoc-by-minsung-kim
+<img width="1244" alt="스크린샷 2022-02-03 14 12 22" src="https://user-images.githubusercontent.com/37164467/152285109-e91b68b6-2092-441b-bc32-e1482a4ba0cb.png">
 
-![2048x2732bb](https://user-images.githubusercontent.com/23623248/122731082-e5212400-d2b5-11eb-82cf-b7e4e240220b.png)
-![1242x2688bb (1)](https://user-images.githubusercontent.com/23623248/122731150-f4a06d00-d2b5-11eb-98b2-f23a0cfec6cd.png)
-![1242x2688bb](https://user-images.githubusercontent.com/23623248/122731041-daff2580-d2b5-11eb-970a-b76d7550c73f.png)
-![1242x2688bb (4)](https://user-images.githubusercontent.com/23623248/122731061-e05c7000-d2b5-11eb-872c-f59bbe09afa5.png)
-![1242x2688bb (3)](https://user-images.githubusercontent.com/23623248/122731065-e18d9d00-d2b5-11eb-8997-3cdfe5788fba.png)
-![1242x2688bb (2)](https://user-images.githubusercontent.com/23623248/122731069-e2beca00-d2b5-11eb-9f23-0167ad067f63.png)
-
-
-# 참가자
+## 참가자
 
     minsekim mina seomoon jiwonlee
 
-<!-- #### [블로그문서](https://mins97.github.io/rndoc2/) -->
-
-<!-- #### [블로그문서파일](https://github.com/Mins97/rndoc2/blob/gh-pages/index.md) -->
-
-#### [프로젝트소스코드](https://github.com/Mins97/rndoc2)
-
-#### [번역 원문](https://velog.io/@leejiwonn/RN-React-Native-Docs-1-The-Basics)
-
-# 목적
-
-    공식문서의 정리와 API components 실제 구동 확인용
-
-# 핵심 폴더 구조
+## 핵심 폴더 구조
 
 ```
 component => 커스텀파일
